@@ -25,14 +25,14 @@ function Bento() {
         <div className="mt-8 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <Reveal>
             <h2 className="max-w-xl font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-              Six practices. One <em className="font-serif italic text-emerald-400">execution</em> engine.
+              Six practices. One <em className="font-serif italic text-brand-400">execution</em> engine.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <Link
               to="/services"
               data-testid="bento-view-all"
-              className="group inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.22em] text-slate-400 transition-colors duration-300 hover:text-emerald-400"
+              className="group inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.22em] text-slate-400 transition-colors duration-300 hover:text-brand-400"
             >
               Deep-dive services
               <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -48,7 +48,7 @@ function Bento() {
                 <Link
                   to="/services"
                   data-testid={`bento-card-${s.slug}`}
-                  className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60 p-7 transition-[border-color,box-shadow,transform] duration-500 hover:-translate-y-1 hover:border-emerald-500/50 hover:shadow-[0_0_36px_rgba(16,185,129,0.14)]"
+                  className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60 p-7 transition-[border-color,box-shadow,transform] duration-500 hover:-translate-y-1 hover:border-brand-500/50 hover:shadow-[0_0_36px_rgba(117,112,212,0.14)]"
                 >
                   {i === 0 && (
                     <>
@@ -62,14 +62,14 @@ function Bento() {
                   )}
                   <div
                     className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                    style={{ background: "linear-gradient(135deg, rgba(16,185,129,0.12), transparent 55%)" }}
+                    style={{ background: "linear-gradient(135deg, rgba(117,112,212,0.12), transparent 55%)" }}
                   />
                   <div className="relative">
                     <div className="flex items-start justify-between">
-                      <span className="grid h-11 w-11 place-items-center rounded-xl border border-emerald-500/30 bg-emerald-950/40 text-emerald-400 transition-[box-shadow,border-color] duration-500 group-hover:border-emerald-400/60 group-hover:shadow-[0_0_18px_rgba(16,185,129,0.35)]">
+                      <span className="grid h-11 w-11 place-items-center rounded-xl border border-brand-500/30 bg-brand-950/40 text-brand-400 transition-[box-shadow,border-color] duration-500 group-hover:border-brand-400/60 group-hover:shadow-[0_0_18px_rgba(117,112,212,0.35)]">
                         <Icon className="h-5 w-5" />
                       </span>
-                      <span className="font-mono text-xs text-slate-600 transition-colors duration-500 group-hover:text-emerald-500/80">
+                      <span className="font-mono text-xs text-slate-600 transition-colors duration-500 group-hover:text-brand-500/80">
                         /{String(i + 1).padStart(2, "0")}
                       </span>
                     </div>
@@ -82,7 +82,7 @@ function Bento() {
                     {s.tags.map((t) => (
                       <span key={t} className="chip">{t}</span>
                     ))}
-                    <span className="ml-auto inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-emerald-400 opacity-0 transition-[opacity,transform] duration-500 group-hover:translate-x-0 group-hover:opacity-100 -translate-x-2">
+                    <span className="ml-auto inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-brand-400 opacity-0 transition-[opacity,transform] duration-500 group-hover:translate-x-0 group-hover:opacity-100 -translate-x-2">
                       Explore <ArrowUpRight className="h-3.5 w-3.5" />
                     </span>
                   </div>
@@ -101,7 +101,7 @@ function Advantage() {
     <section className="relative px-6 py-24 lg:px-12 lg:py-32" data-testid="advantage-section">
       <div
         className="pointer-events-none absolute inset-0"
-        style={{ background: "radial-gradient(circle at 50% 40%, rgba(16,185,129,0.05), transparent 60%)" }}
+        style={{ background: "radial-gradient(circle at 50% 40%, rgba(117,112,212,0.05), transparent 60%)" }}
       />
       <div className="relative mx-auto max-w-7xl">
         <Chapter index="02" label="The Gaussians Advantage" />
@@ -136,10 +136,10 @@ function Advantage() {
                     <th key={c} className="px-6 py-5">
                       <span
                         className={`inline-flex items-center gap-2 font-display text-sm font-semibold ${
-                          i === 0 ? "text-emerald-400" : "text-slate-400"
+                          i === 0 ? "text-brand-400" : "text-slate-400"
                         }`}
                       >
-                        {i === 0 && <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse-dot" />}
+                        {i === 0 && <span className="h-1.5 w-1.5 rounded-full bg-brand-400 animate-pulse-dot" />}
                         {c}
                       </span>
                     </th>
@@ -154,7 +154,7 @@ function Advantage() {
                       <td key={ci} className="px-6 py-4 text-sm">
                         <span className={`inline-flex items-start gap-2 ${ci === 0 ? "text-slate-100" : "text-slate-500"}`}>
                           {ci === 0 ? (
-                            <Check className="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" />
+                            <Check className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
                           ) : ci === 1 ? (
                             <Minus className="mt-0.5 h-4 w-4 shrink-0 text-slate-600" />
                           ) : (

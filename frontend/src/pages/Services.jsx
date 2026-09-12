@@ -21,13 +21,13 @@ function ServiceExplorer() {
               data-testid={`service-filter-${c.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
               onClick={() => setCat(c)}
               className={`relative rounded-full px-5 py-2.5 font-mono text-[11px] uppercase tracking-[0.18em] transition-colors duration-300 ${
-                cat === c ? "text-[#06281c]" : "border border-slate-700/80 text-slate-400 hover:border-emerald-500/50 hover:text-emerald-400"
+                cat === c ? "text-[#06281c]" : "border border-slate-700/80 text-slate-400 hover:border-brand-500/50 hover:text-brand-400"
               }`}
             >
               {cat === c && (
                 <motion.span
                   layoutId="service-tab"
-                  className="absolute inset-0 rounded-full bg-emerald-500"
+                  className="absolute inset-0 rounded-full bg-brand-500"
                   transition={{ duration: 0.45, ease: EASE }}
                 />
               )}
@@ -48,16 +48,16 @@ function ServiceExplorer() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.97 }}
                   transition={{ duration: 0.5, delay: i * 0.05, ease: EASE }}
-                  className="group relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60 p-8 transition-[border-color,box-shadow] duration-500 hover:border-emerald-500/40 hover:shadow-[0_0_32px_rgba(16,185,129,0.1)]"
+                  className="group relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60 p-8 transition-[border-color,box-shadow] duration-500 hover:border-brand-500/40 hover:shadow-[0_0_32px_rgba(117,112,212,0.1)]"
                   data-testid={`service-card-${s.slug}`}
                 >
                   <div
                     className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                    style={{ background: "linear-gradient(135deg, rgba(16,185,129,0.1), transparent 55%)" }}
+                    style={{ background: "linear-gradient(135deg, rgba(117,112,212,0.1), transparent 55%)" }}
                   />
                   <div className="relative">
                     <div className="flex items-center justify-between">
-                      <span className="grid h-12 w-12 place-items-center rounded-xl border border-emerald-500/30 bg-emerald-950/40 text-emerald-400">
+                      <span className="grid h-12 w-12 place-items-center rounded-xl border border-brand-500/30 bg-brand-950/40 text-brand-400">
                         <Icon className="h-5 w-5" />
                       </span>
                       <div className="flex gap-2">
@@ -71,7 +71,7 @@ function ServiceExplorer() {
                     <ul className="mt-6 space-y-2.5">
                       {s.deliverables.map((d) => (
                         <li key={d} className="flex items-start gap-2.5 text-sm text-slate-300">
-                          <Check className="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" />
+                          <Check className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
                           {d}
                         </li>
                       ))}
@@ -79,7 +79,7 @@ function ServiceExplorer() {
                     <Link
                       to="/contact"
                       data-testid={`service-cta-${s.slug}`}
-                      className="mt-7 inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-emerald-400 transition-colors duration-300 hover:text-emerald-300"
+                      className="mt-7 inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-brand-400 transition-colors duration-300 hover:text-brand-300"
                     >
                       Scope this engagement
                       <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -118,14 +118,14 @@ function DeliveryModels() {
                 onClick={() => setActive(i)}
                 className={`relative overflow-hidden rounded-xl border px-6 py-5 text-left transition-[border-color,background-color] duration-400 ${
                   active === i
-                    ? "border-emerald-500/50 bg-emerald-950/25"
+                    ? "border-brand-500/50 bg-brand-950/25"
                     : "border-slate-800 bg-slate-900/40 hover:border-slate-600"
                 }`}
               >
                 {active === i && (
                   <motion.span
                     layoutId="model-indicator"
-                    className="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-emerald-400 to-cyan-400"
+                    className="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-brand-400 to-cyan-400"
                     transition={{ duration: 0.45, ease: EASE }}
                   />
                 )}
@@ -152,7 +152,7 @@ function DeliveryModels() {
                 <ul className="mt-8 grid gap-3 sm:grid-cols-2">
                   {model.bullets.map((b) => (
                     <li key={b} className="flex items-start gap-2.5 rounded-lg border border-slate-800/80 bg-slate-950/50 px-4 py-3 text-sm text-slate-300">
-                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" />
+                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
                       {b}
                     </li>
                   ))}
@@ -177,7 +177,7 @@ function FrameworkMatrix() {
         <Chapter index="03" label="Compliance Matrix" />
         <Reveal className="mt-8">
           <h2 className="max-w-2xl font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            Every standard. <em className="font-serif italic text-emerald-400">Mapped.</em>
+            Every standard. <em className="font-serif italic text-brand-400">Mapped.</em>
           </h2>
         </Reveal>
         <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">

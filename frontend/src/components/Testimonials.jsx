@@ -21,7 +21,7 @@ export default function Testimonials() {
         <div className="mt-8 grid gap-6 lg:grid-cols-12">
           <Reveal className="lg:col-span-5">
             <h2 className="font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-              Multi-framework readiness in <em className="font-serif italic text-emerald-400">90 days.</em>
+              Multi-framework readiness in <em className="font-serif italic text-brand-400">90 days.</em>
             </h2>
             <p className="mt-5 text-sm leading-relaxed text-slate-400">
               A global technology scale-up engaged Gaussians to deploy an embedded GRC managed unit — establishing IT
@@ -33,12 +33,12 @@ export default function Testimonials() {
             {IMPACT_METRICS.map((m, i) => (
               <Reveal key={m.label} delay={i * 0.08}>
                 <div
-                  className="glass-card group h-full px-6 py-7 transition-[border-color,box-shadow] duration-300 hover:border-emerald-500/40 hover:shadow-[0_0_28px_rgba(16,185,129,0.12)]"
+                  className="glass-card group h-full px-6 py-7 transition-[border-color,box-shadow] duration-300 hover:border-brand-500/40 hover:shadow-[0_0_28px_rgba(117,112,212,0.12)]"
                   data-testid={`impact-metric-${i}`}
                 >
                   <p className="font-display text-3xl font-bold text-white sm:text-4xl">
                     {m.value}
-                    <span className="text-emerald-400">{m.suffix}</span>
+                    <span className="text-brand-400">{m.suffix}</span>
                   </p>
                   <p className="mt-2 text-xs leading-relaxed text-slate-400">{m.label}</p>
                 </div>
@@ -53,7 +53,7 @@ export default function Testimonials() {
               className="pointer-events-none absolute inset-0"
               style={{ background: "radial-gradient(circle at 20% 0%, rgba(6,182,212,0.1), transparent 55%)" }}
             />
-            <Quote className="relative h-8 w-8 text-emerald-400/70" />
+            <Quote className="relative h-8 w-8 text-brand-400/70" />
             <div className="relative mt-6 min-h-[150px] sm:min-h-[120px]">
               <AnimatePresence mode="wait">
                 <motion.blockquote
@@ -67,7 +67,7 @@ export default function Testimonials() {
                     “{quote.text}”
                   </p>
                   <footer className="mt-6 font-mono text-xs uppercase tracking-[0.2em] text-slate-500">
-                    <span className="text-emerald-400">{quote.author}</span> — {quote.org}
+                    <span className="text-brand-400">{quote.author}</span> — {quote.org}
                   </footer>
                 </motion.blockquote>
               </AnimatePresence>
@@ -80,7 +80,7 @@ export default function Testimonials() {
                   onClick={() => setIndex(i)}
                   aria-label={`Show quote ${i + 1}`}
                   className={`h-1.5 rounded-full transition-[width,background-color] duration-400 ${
-                    i === index ? "w-10 bg-emerald-400" : "w-4 bg-slate-700 hover:bg-slate-500"
+                    i === index ? "w-10 bg-brand-400" : "w-4 bg-slate-700 hover:bg-slate-500"
                   }`}
                 />
               ))}

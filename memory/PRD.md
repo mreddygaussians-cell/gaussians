@@ -27,6 +27,7 @@ User direction: multi-page site (Home, Services, About, Insights/Blog, Contact);
 - Lenis momentum scrolling, masked line-by-line hero reveal, animated counters, node-network SVG hero graphic with parallax
 - data-testid on all interactive elements
 - Static contact form + newsletter with sonner confirmation toasts
+- Brand alignment with official logos (2026-07-12): real logo assets processed (transparent PNGs: /public/logo-color.png purple-G + white wordmark, /public/logo-white.png), navbar + footer use real logo, entire accent system recolored from emerald to logo purple #7570D4 (tailwind `brand` palette), brand favicon (purple G) + Gaussians page title/meta
 
 ## Backlog
 - P1: Wire contact form to backend/email (Resend) when user wants real submissions

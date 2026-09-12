@@ -42,7 +42,7 @@
         overflow-x: hidden;
     }
     ::selection {
-        background: rgba(16, 185, 129, 0.35);
+        background: rgba(117, 112, 212, 0.35);
         color: #f8fafc;
     }
     ::-webkit-scrollbar {
@@ -56,7 +56,7 @@
         border-radius: 8px;
     }
     ::-webkit-scrollbar-thumb:hover {
-        background: #10b981;
+        background: #7570d4;
     }
 }
 
@@ -68,13 +68,13 @@
         @apply glass rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.37)];
     }
     .status-pill {
-        @apply inline-flex items-center gap-2 rounded-full border border-emerald-500/40 bg-emerald-950/60 px-3 py-1.5 font-mono text-[11px] tracking-wider text-emerald-400 shadow-[0_0_12px_rgba(16,185,129,0.2)];
+        @apply inline-flex items-center gap-2 rounded-full border border-brand-500/40 bg-brand-950/60 px-3 py-1.5 font-mono text-[11px] tracking-wider text-brand-400 shadow-[0_0_12px_rgba(117,112,212,0.2)];
     }
     .chip {
         @apply inline-flex items-center rounded-full border border-slate-700/80 bg-slate-900/60 px-2.5 py-1 font-mono text-[10px] tracking-wider text-slate-400;
     }
     .field {
-        @apply w-full rounded-xl border border-slate-700/80 bg-slate-950/60 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 outline-none transition-[border-color,box-shadow] duration-300 focus:border-emerald-500/60 focus:shadow-[0_0_0_3px_rgba(16,185,129,0.12)];
+        @apply w-full rounded-xl border border-slate-700/80 bg-slate-950/60 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 outline-none transition-[border-color,box-shadow] duration-300 focus:border-brand-500/60 focus:shadow-[0_0_0_3px_rgba(117,112,212,0.12)];
     }
 }
 

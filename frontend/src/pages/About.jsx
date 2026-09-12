@@ -74,14 +74,14 @@ function Leadership() {
         <Chapter index="03" label="Leadership" />
         <Reveal className="mt-8">
           <h2 className="max-w-2xl font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            Led from the <em className="font-serif italic text-emerald-400">front.</em>
+            Led from the <em className="font-serif italic text-brand-400">front.</em>
           </h2>
         </Reveal>
         <div className="mt-14 grid gap-6 lg:grid-cols-2">
           {LEADERS.map((l, i) => (
             <Reveal key={l.slug} delay={i * 0.1}>
               <article
-                className="group glass-card overflow-hidden transition-[border-color,box-shadow] duration-500 hover:border-emerald-500/40 hover:shadow-[0_0_36px_rgba(16,185,129,0.12)]"
+                className="group glass-card overflow-hidden transition-[border-color,box-shadow] duration-500 hover:border-brand-500/40 hover:shadow-[0_0_36px_rgba(117,112,212,0.12)]"
                 data-testid={`leader-card-${l.slug}`}
               >
                 <div className="relative h-72 overflow-hidden sm:h-80">
@@ -92,7 +92,7 @@ function Leadership() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0B101C] via-transparent to-transparent" />
                   <div className="absolute bottom-5 left-6 right-6">
-                    <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-emerald-400">{l.role}</p>
+                    <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-brand-400">{l.role}</p>
                     <h3 className="mt-1.5 font-display text-2xl font-bold text-white">{l.name}</h3>
                   </div>
                 </div>
@@ -111,7 +111,7 @@ function Leadership() {
                     <Link
                       to="/contact"
                       data-testid={`leader-book-${l.slug}`}
-                      className="inline-flex items-center gap-2 rounded-full border border-emerald-500/40 bg-emerald-950/40 px-4 py-2 font-mono text-[11px] uppercase tracking-[0.16em] text-emerald-400 transition-[background-color,border-color] duration-300 hover:border-emerald-400/70 hover:bg-emerald-950/70"
+                      className="inline-flex items-center gap-2 rounded-full border border-brand-500/40 bg-brand-950/40 px-4 py-2 font-mono text-[11px] uppercase tracking-[0.16em] text-brand-400 transition-[background-color,border-color] duration-300 hover:border-brand-400/70 hover:bg-brand-950/70"
                     >
                       Book consultation <ArrowUpRight className="h-3.5 w-3.5" />
                     </Link>

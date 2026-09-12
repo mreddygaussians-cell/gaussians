@@ -30,7 +30,7 @@ function ConsultForm() {
     <div className="glass-card relative overflow-hidden p-8 sm:p-10" data-testid="contact-form-card">
       <div
         className="pointer-events-none absolute inset-0"
-        style={{ background: "radial-gradient(circle at 100% 0%, rgba(16,185,129,0.1), transparent 50%)" }}
+        style={{ background: "radial-gradient(circle at 100% 0%, rgba(117,112,212,0.1), transparent 50%)" }}
       />
       <AnimatePresence mode="wait">
         {submitted ? (
@@ -42,11 +42,11 @@ function ConsultForm() {
             className="relative flex min-h-[420px] flex-col items-start justify-center"
             data-testid="contact-form-success"
           >
-            <span className="grid h-16 w-16 place-items-center rounded-2xl border border-emerald-500/40 bg-emerald-950/50">
-              <CheckCircle2 className="h-8 w-8 text-emerald-400" />
+            <span className="grid h-16 w-16 place-items-center rounded-2xl border border-brand-500/40 bg-brand-950/50">
+              <CheckCircle2 className="h-8 w-8 text-brand-400" />
             </span>
             <h2 className="mt-8 font-display text-2xl font-bold text-white sm:text-3xl">
-              Request <em className="font-serif italic text-emerald-400">logged.</em>
+              Request <em className="font-serif italic text-brand-400">logged.</em>
             </h2>
             <p className="mt-4 max-w-md text-sm leading-relaxed text-slate-400">
               Thank you, {form.name.split(" ")[0] || "there"}. A Gaussians practice director will reach out at{" "}
@@ -67,7 +67,7 @@ function ConsultForm() {
                 setModel("");
               }}
               data-testid="contact-form-reset-button"
-              className="mt-10 font-mono text-[11px] uppercase tracking-[0.22em] text-slate-400 transition-colors duration-300 hover:text-emerald-400"
+              className="mt-10 font-mono text-[11px] uppercase tracking-[0.22em] text-slate-400 transition-colors duration-300 hover:text-brand-400"
             >
               Submit another request
             </button>
@@ -108,7 +108,7 @@ function ConsultForm() {
                     data-testid={`contact-input-framework-${f.toLowerCase().replace(/[^a-z0-9]+/g, "")}`}
                     className={`rounded-full px-4 py-2 font-mono text-[11px] tracking-wider transition-[background-color,border-color,color] duration-300 ${
                       frameworks.includes(f)
-                        ? "border border-emerald-500/60 bg-emerald-950/60 text-emerald-400 shadow-[0_0_12px_rgba(16,185,129,0.2)]"
+                        ? "border border-brand-500/60 bg-brand-950/60 text-brand-400 shadow-[0_0_12px_rgba(117,112,212,0.2)]"
                         : "border border-slate-700/80 text-slate-400 hover:border-slate-500 hover:text-slate-200"
                     }`}
                   >
@@ -152,7 +152,7 @@ function ConsultForm() {
             <button
               type="submit"
               data-testid="contact-form-submit-button"
-              className="group mt-8 inline-flex w-full items-center justify-center gap-2.5 rounded-xl bg-emerald-500 px-8 py-4 font-display text-sm font-semibold text-[#06281c] transition-[background-color,box-shadow,transform] duration-300 hover:-translate-y-0.5 hover:bg-emerald-400 hover:shadow-[0_12px_32px_rgba(16,185,129,0.4)] sm:w-auto"
+              className="group mt-8 inline-flex w-full items-center justify-center gap-2.5 rounded-xl bg-brand-500 px-8 py-4 font-display text-sm font-semibold text-[#15142E] transition-[background-color,box-shadow,transform] duration-300 hover:-translate-y-0.5 hover:bg-brand-400 hover:shadow-[0_12px_32px_rgba(117,112,212,0.4)] sm:w-auto"
             >
               Request Consultation
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -182,15 +182,15 @@ function HubPanel() {
           <div className="p-7">
             <ul className="space-y-4 text-sm text-slate-300">
               <li className="flex items-start gap-3">
-                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" />
-                <a href={`mailto:${CONTACT.email}`} data-testid="contact-email-link" className="transition-colors duration-300 hover:text-emerald-400">{CONTACT.email}</a>
+                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
+                <a href={`mailto:${CONTACT.email}`} data-testid="contact-email-link" className="transition-colors duration-300 hover:text-brand-400">{CONTACT.email}</a>
               </li>
               <li className="flex items-start gap-3">
-                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" />
-                <a href={`tel:${CONTACT.phone.replace(/\s/g, "")}`} data-testid="contact-phone-link" className="transition-colors duration-300 hover:text-emerald-400">{CONTACT.phone}</a>
+                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
+                <a href={`tel:${CONTACT.phone.replace(/\s/g, "")}`} data-testid="contact-phone-link" className="transition-colors duration-300 hover:text-brand-400">{CONTACT.phone}</a>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" />
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
                 <span>{CONTACT.address}</span>
               </li>
               <li className="flex items-start gap-3">

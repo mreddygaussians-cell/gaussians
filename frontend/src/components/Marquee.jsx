@@ -10,7 +10,7 @@ export default function Marquee({ items, testid = "framework-marquee" }) {
             key={`${item}-${i}`}
             className="inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-slate-800 bg-slate-900/60 px-5 py-2 font-mono text-xs tracking-wider text-slate-300"
           >
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400/80" />
+            <span className="h-1.5 w-1.5 rounded-full bg-brand-400/80" />
             {item}
           </span>
         ))}

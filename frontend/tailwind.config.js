@@ -20,6 +20,13 @@ module.exports = {
         sm: 'calc(var(--radius) - 4px)'
       },
       colors: {
+        brand: {
+          300: '#A8A3EC',
+          400: '#8B86E2',
+          500: '#7570D4',
+          600: '#5F59BC',
+          950: '#16142E'
+        },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
@@ -75,8 +82,8 @@ module.exports = {
           to: { transform: 'translateX(-50%)' }
         },
         'pulse-dot': {
-          '0%, 100%': { opacity: '1', boxShadow: '0 0 0 0 rgba(16,185,129,0.5)' },
-          '50%': { opacity: '0.6', boxShadow: '0 0 0 6px rgba(16,185,129,0)' }
+          '0%, 100%': { opacity: '1', boxShadow: '0 0 0 0 rgba(117,112,212,0.5)' },
+          '50%': { opacity: '0.6', boxShadow: '0 0 0 6px rgba(117,112,212,0)' }
         },
         float: {
           '0%, 100%': { transform: 'translateY(0)' },

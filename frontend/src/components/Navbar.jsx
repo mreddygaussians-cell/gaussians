@@ -14,22 +14,11 @@ const LINKS = [
 export function Logo() {
   return (
     <Link to="/" data-testid="nav-logo" className="group flex items-center gap-2.5">
-      <span className="relative grid h-9 w-9 place-items-center rounded-lg border border-emerald-500/40 bg-emerald-950/40 transition-[border-color,box-shadow] duration-300 group-hover:border-emerald-400/70 group-hover:shadow-[0_0_18px_rgba(16,185,129,0.3)]">
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-          <circle cx="4" cy="13" r="2.2" className="fill-emerald-400" />
-          <circle cx="14" cy="5" r="2.2" className="fill-cyan-400" />
-          <circle cx="13.5" cy="13.5" r="1.6" className="fill-slate-500" />
-          <path d="M5.6 11.6 12.4 6.4M6.2 13h5.6" stroke="url(#lg)" strokeWidth="1" />
-          <defs>
-            <linearGradient id="lg" x1="0" y1="0" x2="18" y2="18">
-              <stop stopColor="#10B981" />
-              <stop offset="1" stopColor="#06B6D4" />
-            </linearGradient>
-          </defs>
-        </svg>
-        <span className="absolute -right-0.5 -top-0.5 h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse-dot" />
-      </span>
-      <span className="font-display text-lg font-bold tracking-[0.18em] text-white">GAUSSIANS</span>
+      <img
+        src="/logo-color.png"
+        alt="Gaussians"
+        className="h-8 w-auto transition-[filter,transform] duration-300 group-hover:scale-[1.02] group-hover:drop-shadow-[0_0_18px_rgba(117,112,212,0.55)]"
+      />
     </Link>
   );
 }
@@ -68,7 +57,7 @@ export default function Navbar() {
               data-testid={`nav-link-${l.id}`}
               className={({ isActive }) =>
                 `relative font-mono text-[11px] uppercase tracking-[0.22em] transition-colors duration-300 ${
-                  isActive ? "text-emerald-400" : "text-slate-400 hover:text-white"
+                  isActive ? "text-brand-400" : "text-slate-400 hover:text-white"
                 }`
               }
             >
@@ -80,7 +69,7 @@ export default function Navbar() {
           <Link
             to="/contact"
             data-testid="nav-cta-button"
-            className="group inline-flex items-center gap-2 rounded-full bg-emerald-500 px-5 py-2.5 font-display text-xs font-semibold uppercase tracking-[0.14em] text-[#06281c] transition-[background-color,box-shadow,transform] duration-300 hover:-translate-y-0.5 hover:bg-emerald-400 hover:shadow-[0_8px_28px_rgba(16,185,129,0.4)]"
+            className="group inline-flex items-center gap-2 rounded-full bg-brand-500 px-5 py-2.5 font-display text-xs font-semibold uppercase tracking-[0.14em] text-[#15142E] transition-[background-color,box-shadow,transform] duration-300 hover:-translate-y-0.5 hover:bg-brand-400 hover:shadow-[0_8px_28px_rgba(117,112,212,0.4)]"
           >
             Book Consultation
             <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -112,7 +101,7 @@ export default function Navbar() {
                   data-testid={`nav-mobile-link-${l.id}`}
                   className={({ isActive }) =>
                     `rounded-lg px-4 py-3 font-display text-base font-medium transition-colors duration-300 ${
-                      isActive ? "bg-emerald-950/50 text-emerald-400" : "text-slate-300 hover:bg-slate-800/60"
+                      isActive ? "bg-brand-950/50 text-brand-400" : "text-slate-300 hover:bg-slate-800/60"
                     }`
                   }
                 >
@@ -122,7 +111,7 @@ export default function Navbar() {
               <Link
                 to="/contact"
                 data-testid="nav-mobile-cta"
-                className="mt-3 inline-flex items-center justify-center gap-2 rounded-full bg-emerald-500 px-5 py-3 font-display text-sm font-semibold text-[#06281c]"
+                className="mt-3 inline-flex items-center justify-center gap-2 rounded-full bg-brand-500 px-5 py-3 font-display text-sm font-semibold text-[#15142E]"
               >
                 Book Consultation <ArrowUpRight className="h-4 w-4" />
               </Link>

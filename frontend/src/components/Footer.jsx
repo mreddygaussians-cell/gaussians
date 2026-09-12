@@ -26,7 +26,7 @@ export default function Footer() {
             </p>
             <div className="mt-6">
               <span className="status-pill" data-testid="footer-status-pill">
-                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse-dot" />
+                <span className="h-1.5 w-1.5 rounded-full bg-brand-400 animate-pulse-dot" />
                 ALL SYSTEMS OPERATIONAL
               </span>
             </div>
@@ -39,7 +39,7 @@ export default function Footer() {
                   <Link
                     to={n.to}
                     data-testid={`footer-link-${n.label.toLowerCase()}`}
-                    className="text-sm text-slate-400 transition-colors duration-300 hover:text-emerald-400"
+                    className="text-sm text-slate-400 transition-colors duration-300 hover:text-brand-400"
                   >
                     {n.label}
                   </Link>
@@ -61,19 +61,19 @@ export default function Footer() {
             <h4 className="font-mono text-[11px] uppercase tracking-[0.25em] text-slate-500">Global Hub</h4>
             <ul className="mt-5 space-y-3 text-sm text-slate-400">
               <li className="flex items-start gap-2.5">
-                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" />
-                <a href={`mailto:${CONTACT.email}`} data-testid="footer-email" className="transition-colors duration-300 hover:text-emerald-400">
+                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
+                <a href={`mailto:${CONTACT.email}`} data-testid="footer-email" className="transition-colors duration-300 hover:text-brand-400">
                   {CONTACT.email}
                 </a>
               </li>
               <li className="flex items-start gap-2.5">
-                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" />
-                <a href={`tel:${CONTACT.phone.replace(/\s/g, "")}`} data-testid="footer-phone" className="transition-colors duration-300 hover:text-emerald-400">
+                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
+                <a href={`tel:${CONTACT.phone.replace(/\s/g, "")}`} data-testid="footer-phone" className="transition-colors duration-300 hover:text-brand-400">
                   {CONTACT.phone}
                 </a>
               </li>
               <li className="flex items-start gap-2.5">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" />
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
                 <span>{CONTACT.address}</span>
               </li>
             </ul>

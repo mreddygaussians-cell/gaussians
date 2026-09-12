@@ -39,19 +39,19 @@ function Counter({ prefix, value, suffix }) {
     <span ref={ref} className="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
       {prefix}
       {display}
-      <span className="text-emerald-400">{suffix}</span>
+      <span className="text-brand-400">{suffix}</span>
     </span>
   );
 }
 
 const NODES = [
-  { x: 60, y: 40, c: "#10B981", d: 0 },
+  { x: 60, y: 40, c: "#7570D4", d: 0 },
   { x: 220, y: 90, c: "#06B6D4", d: 0.4 },
-  { x: 360, y: 40, c: "#10B981", d: 0.9 },
+  { x: 360, y: 40, c: "#7570D4", d: 0.9 },
   { x: 120, y: 200, c: "#06B6D4", d: 1.2 },
-  { x: 300, y: 220, c: "#10B981", d: 0.2 },
+  { x: 300, y: 220, c: "#7570D4", d: 0.2 },
   { x: 420, y: 150, c: "#6366F1", d: 0.7 },
-  { x: 180, y: 330, c: "#10B981", d: 1.5 },
+  { x: 180, y: 330, c: "#7570D4", d: 1.5 },
   { x: 380, y: 330, c: "#06B6D4", d: 1.0 },
 ];
 
@@ -88,7 +88,7 @@ function NodeNetwork() {
       ))}
       <defs>
         <linearGradient id="nodeGrad" x1="0" y1="0" x2="480" y2="380">
-          <stop stopColor="#10B981" stopOpacity="0.7" />
+          <stop stopColor="#7570D4" stopOpacity="0.7" />
           <stop offset="1" stopColor="#06B6D4" stopOpacity="0.7" />
         </linearGradient>
       </defs>
@@ -109,7 +109,7 @@ export default function Hero() {
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(circle at 50% 0%, rgba(16,185,129,0.15) 0%, rgba(6,182,212,0.08) 35%, rgba(9,13,22,0) 75%)",
+              "radial-gradient(circle at 50% 0%, rgba(117,112,212,0.15) 0%, rgba(6,182,212,0.08) 35%, rgba(9,13,22,0) 75%)",
           }}
         />
         <div className="grid-pattern absolute inset-0 opacity-30 [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
@@ -125,7 +125,7 @@ export default function Hero() {
               className="flex flex-wrap items-center gap-3"
             >
               <span className="status-pill" data-testid="hero-status-pill">
-                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse-dot" />
+                <span className="h-1.5 w-1.5 rounded-full bg-brand-400 animate-pulse-dot" />
                 STATUS: OPERATIONAL · 100% AUDIT READINESS RATE
               </span>
               <span className="font-mono text-[11px] uppercase tracking-[0.25em] text-slate-500">
@@ -136,7 +136,7 @@ export default function Hero() {
             <h1 className="mt-8 font-display text-4xl font-bold leading-[1.04] tracking-tight text-white sm:text-5xl lg:text-6xl">
               <KineticLine delay={0.5}>Security engineered</KineticLine>
               <KineticLine delay={0.62}>
-                for <em className="font-serif font-medium italic text-emerald-400">velocity.</em>
+                for <em className="font-serif font-medium italic text-brand-400">velocity.</em>
               </KineticLine>
               <KineticLine delay={0.74}>Compliance built</KineticLine>
               <KineticLine delay={0.86}>
@@ -164,7 +164,7 @@ export default function Hero() {
               <Link
                 to="/contact"
                 data-testid="hero-cta-button"
-                className="group inline-flex items-center gap-2.5 rounded-full bg-emerald-500 px-7 py-3.5 font-display text-sm font-semibold text-[#06281c] transition-[background-color,box-shadow,transform] duration-300 hover:-translate-y-0.5 hover:bg-emerald-400 hover:shadow-[0_12px_36px_rgba(16,185,129,0.4)]"
+                className="group inline-flex items-center gap-2.5 rounded-full bg-brand-500 px-7 py-3.5 font-display text-sm font-semibold text-[#15142E] transition-[background-color,box-shadow,transform] duration-300 hover:-translate-y-0.5 hover:bg-brand-400 hover:shadow-[0_12px_36px_rgba(117,112,212,0.4)]"
               >
                 Launch Compliance Journey
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -195,8 +195,8 @@ export default function Hero() {
               <NodeNetwork />
               <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between rounded-xl border border-slate-800/80 bg-[#0B101C]/80 px-4 py-3 backdrop-blur-md">
                 <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-slate-500">GRC Engine</span>
-                <span className="flex items-center gap-2 font-mono text-[10px] tracking-wider text-emerald-400">
-                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse-dot" />
+                <span className="flex items-center gap-2 font-mono text-[10px] tracking-wider text-brand-400">
+                  <span className="h-1.5 w-1.5 rounded-full bg-brand-400 animate-pulse-dot" />
                   CONTROLS: MAPPED · EVIDENCE: LIVE
                 </span>
               </div>

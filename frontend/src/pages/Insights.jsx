@@ -53,7 +53,7 @@ function Feed() {
             data-testid={`insight-filter-${c.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
             onClick={() => setCat(c)}
             className={`relative rounded-full px-5 py-2.5 font-mono text-[11px] uppercase tracking-[0.18em] transition-colors duration-300 ${
-              cat === c ? "text-[#06281c]" : "border border-slate-700/80 text-slate-400 hover:border-cyan-400/50 hover:text-cyan-400"
+              cat === c ? "text-[#15142E]" : "border border-slate-700/80 text-slate-400 hover:border-cyan-400/50 hover:text-cyan-400"
             }`}
           >
             {cat === c && (
@@ -117,13 +117,13 @@ function Newsletter() {
       <div className="glass-card relative overflow-hidden px-8 py-12 sm:px-12" data-testid="newsletter-box">
         <div
           className="pointer-events-none absolute inset-0"
-          style={{ background: "radial-gradient(circle at 90% 10%, rgba(16,185,129,0.12), transparent 50%)" }}
+          style={{ background: "radial-gradient(circle at 90% 10%, rgba(117,112,212,0.12), transparent 50%)" }}
         />
         <div className="relative flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
           <div>
-            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-emerald-400">The Gaussians Brief</p>
+            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-brand-400">The Gaussians Brief</p>
             <h3 className="mt-3 font-display text-2xl font-semibold text-white sm:text-3xl">
-              Monthly intelligence. <em className="font-serif italic text-emerald-400">Zero noise.</em>
+              Monthly intelligence. <em className="font-serif italic text-brand-400">Zero noise.</em>
             </h3>
             <p className="mt-3 max-w-md text-sm text-slate-400">
               Regulatory transitions, framework updates, and field notes from 200+ audit engagements.
@@ -142,7 +142,7 @@ function Newsletter() {
             <button
               type="submit"
               data-testid="newsletter-submit-button"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-500 px-6 py-3 font-display text-sm font-semibold text-[#06281c] transition-[background-color,box-shadow] duration-300 hover:bg-emerald-400 hover:shadow-[0_8px_24px_rgba(16,185,129,0.35)]"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-500 px-6 py-3 font-display text-sm font-semibold text-[#15142E] transition-[background-color,box-shadow] duration-300 hover:bg-brand-400 hover:shadow-[0_8px_24px_rgba(117,112,212,0.35)]"
             >
               <Mail className="h-4 w-4" /> Subscribe
             </button>
