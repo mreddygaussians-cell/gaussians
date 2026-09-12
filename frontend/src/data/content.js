@@ -12,12 +12,14 @@ import {
 } from "lucide-react";
 
 export const IMAGES = {
-  mesh: "https://images.unsplash.com/photo-1746470427686-4c3551f3d689?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwzfHxjeWJlcnNlY3VyaXR5JTIwdGVjaCUyMGNvcnBvcmF0ZSUyMGFic3RyYWN0JTIwYmFja2dyb3VuZCUyMHNlcnZlciUyMG1hdHJpeCUyMGRhcmt8ZW58MHx8fHwxNzg5MjA1NzUyfDA&ixlib=rb-4.1.0&q=85",
-  server: "https://images.unsplash.com/photo-1561233835-f937539b95b9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwyfHxjeWJlcnNlY3VyaXR5JTIwdGVjaCUyMGNvcnBvcmF0ZSUyMGFic3RyYWN0JTIwYmFja2dyb3VuZCUyMHNlcnZlciUyMG1hdHJpeCUyMGRhcmt8ZW58MHx8fHwxNzg5MjA1NzUyfDA&ixlib=rb-4.1.0&q=85",
-  megha: "https://images.unsplash.com/photo-1762341124796-530c0085f7d8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjBleGVjdXRpdmUlMjBsZWFkZXJzaGlwJTIwcG9ydHJhaXQlMjBwcm9mZXNzaW9uYWwlMjBvZmZpY2V8ZW58MHx8fHwxNzg5MjA1NzUyfDA&ixlib=rb-4.1.0&q=85",
-  mallikarjuna: "https://images.unsplash.com/photo-1737574821698-862e77f044c1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwyfHxjb3Jwb3JhdGUlMjBleGVjdXRpdmUlMjBsZWFkZXJzaGlwJTIwcG9ydHJhaXQlMjBwcm9mZXNzaW9uYWwlMjBvZmZpY2V8ZW58MHx8fHwxNzg5MjA1NzUyfDA&ixlib=rb-4.1.0&q=85",
+  arch1: "https://images.unsplash.com/photo-1496307653780-42ee777d4833?crop=entropy&cs=srgb&fm=jpg&q=85",
+  arch2: "https://images.unsplash.com/photo-1483366774565-c783b9f70e2c?crop=entropy&cs=srgb&fm=jpg&q=85",
+  arch3: "https://images.unsplash.com/photo-1549791084-5f78368b208b?crop=entropy&cs=srgb&fm=jpg&q=85",
+  megha: "https://images.unsplash.com/photo-1614786269829-d24616faf56d?crop=entropy&cs=srgb&fm=jpg&q=85",
+  mallikarjuna: "https://images.unsplash.com/photo-1686434538659-bb72333a1054?crop=entropy&cs=srgb&fm=jpg&q=85",
+  community: "https://images.unsplash.com/photo-1543067361-9bf996edf6ff?crop=entropy&cs=srgb&fm=jpg&q=85",
   gurgaon: "https://images.unsplash.com/photo-1761413049230-2c0dd9af7c9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjB0ZWNoJTIwb2ZmaWNlJTIwYnVpbGRpbmclMjBndXJnYW9uJTIwYXJjaGl0ZWN0dXJlJTIwc2t5c2NyYXBlciUyMG5pZ2h0fGVufDB8fHx8MTc4OTIwNTc2MHww&ixlib=rb-4.1.0&q=85",
-  expressway: "https://images.unsplash.com/photo-1514392181188-8f5d54262fa5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZWNoJTIwb2ZmaWNlJTIwYnVpbGRpbmclMjBndXJnYW9uJTIwYXJjaGl0ZWN0dXJlJTIwc2t5c2NyYXBlciUyMG5pZ2h0fGVufDB8fHx8MTc4OTIwNTc2MHww&ixlib=rb-4.1.0&q=85",
+  heroVideo: "https://videos.pexels.com/video-files/3129671/3129671-hd_1920_1080_30fps.mp4",
 };
 
 export const METRICS = [

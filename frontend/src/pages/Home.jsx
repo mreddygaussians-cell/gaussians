@@ -24,15 +24,15 @@ function Bento() {
         <Chapter index="01" label="Capabilities" />
         <div className="mt-8 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <Reveal>
-            <h2 className="max-w-xl font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-              Six practices. One <em className="font-serif italic text-brand-400">execution</em> engine.
+            <h2 className="max-w-xl font-display text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+              Six practices. One <em className="font-serif italic text-brand-500">execution</em> engine.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <Link
               to="/services"
               data-testid="bento-view-all"
-              className="group inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.22em] text-slate-400 transition-colors duration-300 hover:text-brand-400"
+              className="group inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.22em] text-slate-400 transition-colors duration-300 hover:text-brand-600"
             >
               Deep-dive services
               <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -48,41 +48,37 @@ function Bento() {
                 <Link
                   to="/services"
                   data-testid={`bento-card-${s.slug}`}
-                  className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60 p-7 transition-[border-color,box-shadow,transform] duration-500 hover:-translate-y-1 hover:border-brand-500/50 hover:shadow-[0_0_36px_rgba(117,112,212,0.14)]"
+                  className="card-white group relative flex h-full flex-col justify-between overflow-hidden p-7 transition-[border-color,box-shadow,transform] duration-500 hover:-translate-y-1 hover:border-brand-500/40 hover:shadow-[0_24px_48px_-16px_rgba(117,112,212,0.22)]"
                 >
                   {i === 0 && (
                     <>
                       <img
-                        src={IMAGES.mesh}
+                        src={IMAGES.arch3}
                         alt=""
-                        className="absolute inset-0 h-full w-full object-cover opacity-25 transition-[opacity,transform] duration-700 group-hover:scale-105 group-hover:opacity-35"
+                        className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#0B101C] via-[#0B101C]/70 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-white/30" />
                     </>
                   )}
-                  <div
-                    className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                    style={{ background: "linear-gradient(135deg, rgba(117,112,212,0.12), transparent 55%)" }}
-                  />
                   <div className="relative">
                     <div className="flex items-start justify-between">
-                      <span className="grid h-11 w-11 place-items-center rounded-xl border border-brand-500/30 bg-brand-950/40 text-brand-400 transition-[box-shadow,border-color] duration-500 group-hover:border-brand-400/60 group-hover:shadow-[0_0_18px_rgba(117,112,212,0.35)]">
+                      <span className="grid h-11 w-11 place-items-center rounded-xl border border-brand-500/25 bg-brand-500/[0.07] text-brand-500 transition-[box-shadow,border-color,background-color] duration-500 group-hover:border-brand-500/50 group-hover:bg-brand-500/10 group-hover:shadow-[0_8px_25px_-4px_rgba(117,112,212,0.35)]">
                         <Icon className="h-5 w-5" />
                       </span>
-                      <span className="font-mono text-xs text-slate-600 transition-colors duration-500 group-hover:text-brand-500/80">
+                      <span className="font-mono text-xs text-slate-300 transition-colors duration-500 group-hover:text-brand-400">
                         /{String(i + 1).padStart(2, "0")}
                       </span>
                     </div>
-                    <h3 className="mt-6 font-display text-lg font-semibold leading-snug text-white sm:text-xl">
+                    <h3 className="mt-6 font-display text-lg font-semibold leading-snug text-slate-900 sm:text-xl">
                       {s.title}
                     </h3>
-                    <p className="mt-3 text-sm leading-relaxed text-slate-400">{s.desc}</p>
+                    <p className="mt-3 text-sm leading-relaxed text-slate-500">{s.desc}</p>
                   </div>
                   <div className="relative mt-6 flex flex-wrap items-center gap-2">
                     {s.tags.map((t) => (
                       <span key={t} className="chip">{t}</span>
                     ))}
-                    <span className="ml-auto inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-brand-400 opacity-0 transition-[opacity,transform] duration-500 group-hover:translate-x-0 group-hover:opacity-100 -translate-x-2">
+                    <span className="ml-auto inline-flex -translate-x-2 items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-brand-600 opacity-0 transition-[opacity,transform] duration-500 group-hover:translate-x-0 group-hover:opacity-100">
                       Explore <ArrowUpRight className="h-3.5 w-3.5" />
                     </span>
                   </div>
@@ -98,7 +94,7 @@ function Bento() {
 
 function Advantage() {
   return (
-    <section className="relative px-6 py-24 lg:px-12 lg:py-32" data-testid="advantage-section">
+    <section className="relative bg-slate-50/60 px-6 py-24 lg:px-12 lg:py-32" data-testid="advantage-section">
       <div
         className="pointer-events-none absolute inset-0"
         style={{ background: "radial-gradient(circle at 50% 40%, rgba(117,112,212,0.05), transparent 60%)" }}
@@ -106,8 +102,8 @@ function Advantage() {
       <div className="relative mx-auto max-w-7xl">
         <Chapter index="02" label="The Gaussians Advantage" />
         <Reveal className="mt-8">
-          <h2 className="max-w-2xl font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            Execution over advice. <em className="font-serif italic text-cyan-400">Always.</em>
+          <h2 className="max-w-2xl font-display text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+            Execution over advice. <em className="font-serif italic text-brand-500">Always.</em>
           </h2>
         </Reveal>
 
@@ -115,31 +111,31 @@ function Advantage() {
           {PILLARS.map((p, i) => (
             <Reveal key={p.title} delay={i * 0.08}>
               <div
-                className="group h-full rounded-2xl border border-slate-800 bg-slate-900/60 p-7 transition-[border-color,box-shadow] duration-500 hover:border-cyan-400/40 hover:shadow-[0_0_28px_rgba(6,182,212,0.12)]"
+                className="card-white group h-full p-7 transition-[border-color,box-shadow,transform] duration-500 hover:-translate-y-1 hover:border-brand-500/40 hover:shadow-[0_20px_40px_-15px_rgba(117,112,212,0.18)]"
                 data-testid={`pillar-card-${i}`}
               >
-                <span className="font-mono text-xs tracking-[0.25em] text-cyan-400">0{i + 1}</span>
-                <h3 className="mt-4 font-display text-lg font-semibold text-white">{p.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-slate-400">{p.desc}</p>
+                <span className="font-mono text-xs tracking-[0.25em] text-brand-500">0{i + 1}</span>
+                <h3 className="mt-4 font-display text-lg font-semibold text-slate-900">{p.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-slate-500">{p.desc}</p>
               </div>
             </Reveal>
           ))}
         </div>
 
         <Reveal className="mt-16">
-          <div className="glass-card overflow-x-auto" data-testid="comparison-matrix">
+          <div className="card-white overflow-x-auto shadow-[0_10px_30px_-5px_rgba(15,23,42,0.05)]" data-testid="comparison-matrix">
             <table className="w-full min-w-[760px] border-collapse text-left">
               <thead>
-                <tr className="border-b border-slate-800">
-                  <th className="px-6 py-5 font-mono text-[11px] uppercase tracking-[0.22em] text-slate-500">Dimension</th>
+                <tr className="border-b border-slate-200 bg-slate-50/80">
+                  <th className="px-6 py-5 font-mono text-[11px] uppercase tracking-[0.22em] text-slate-400">Dimension</th>
                   {MATRIX.columns.map((c, i) => (
-                    <th key={c} className="px-6 py-5">
+                    <th key={c} className={`px-6 py-5 ${i === 0 ? "bg-brand-500/[0.06]" : ""}`}>
                       <span
                         className={`inline-flex items-center gap-2 font-display text-sm font-semibold ${
-                          i === 0 ? "text-brand-400" : "text-slate-400"
+                          i === 0 ? "text-brand-600" : "text-slate-500"
                         }`}
                       >
-                        {i === 0 && <span className="h-1.5 w-1.5 rounded-full bg-brand-400 animate-pulse-dot" />}
+                        {i === 0 && <span className="h-1.5 w-1.5 rounded-full bg-brand-500 animate-pulse-dot" />}
                         {c}
                       </span>
                     </th>
@@ -148,17 +144,17 @@ function Advantage() {
               </thead>
               <tbody>
                 {MATRIX.rows.map((row, ri) => (
-                  <tr key={ri} className="border-b border-slate-800/60 transition-colors duration-300 last:border-0 hover:bg-slate-800/20">
-                    <td className="px-6 py-4 font-mono text-xs uppercase tracking-[0.16em] text-slate-500">{row[0]}</td>
+                  <tr key={ri} className="border-b border-slate-100 transition-colors duration-300 last:border-0 hover:bg-slate-50/60">
+                    <td className="px-6 py-4 font-mono text-xs uppercase tracking-[0.16em] text-slate-400">{row[0]}</td>
                     {row.slice(1).map((cell, ci) => (
-                      <td key={ci} className="px-6 py-4 text-sm">
-                        <span className={`inline-flex items-start gap-2 ${ci === 0 ? "text-slate-100" : "text-slate-500"}`}>
+                      <td key={ci} className={`px-6 py-4 text-sm ${ci === 0 ? "bg-brand-500/[0.04]" : ""}`}>
+                        <span className={`inline-flex items-start gap-2 ${ci === 0 ? "font-medium text-slate-800" : "text-slate-400"}`}>
                           {ci === 0 ? (
-                            <Check className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
+                            <Check className="mt-0.5 h-4 w-4 shrink-0 text-brand-500" />
                           ) : ci === 1 ? (
-                            <Minus className="mt-0.5 h-4 w-4 shrink-0 text-slate-600" />
+                            <Minus className="mt-0.5 h-4 w-4 shrink-0 text-slate-300" />
                           ) : (
-                            <X className="mt-0.5 h-4 w-4 shrink-0 text-slate-700" />
+                            <X className="mt-0.5 h-4 w-4 shrink-0 text-slate-200" />
                           )}
                           {cell}
                         </span>

@@ -28,6 +28,7 @@ User direction: multi-page site (Home, Services, About, Insights/Blog, Contact);
 - data-testid on all interactive elements
 - Static contact form + newsletter with sonner confirmation toasts
 - Brand alignment with official logos (2026-07-12): real logo assets processed (transparent PNGs: /public/logo-color.png purple-G + white wordmark, /public/logo-white.png), navbar + footer use real logo, entire accent system recolored from emerald to logo purple #7570D4 (tailwind `brand` palette), brand favicon (purple G) + Gaussians page title/meta
+- Light theme redesign (2026-07-12, per user "clean and white like Apple and BMW, very classy"): full visual overhaul to white/light aesthetic — white canvases, hairline slate-200 borders, soft diffused shadows, slate-900 pill CTAs, brand purple as single accent, dark slate-900 CTA panel + footer for contrast, ambient hero background video (Pexels HD mp4) with slow Ken Burns image fallback, framed architecture imagery with parallax (hero, About image band), new leadership portraits; all content/sections/pages preserved
 
 ## Backlog
 - P1: Wire contact form to backend/email (Resend) when user wants real submissions

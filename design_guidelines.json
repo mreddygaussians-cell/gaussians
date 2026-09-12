@@ -1,207 +1,130 @@
 {
+  "theme": "light",
+  "archetype": "APPLE_BMW_HYBRID_PREMIUM_LIGHT",
+  "project_name": "Gaussians",
+  "tagline": "Security Engineered for Velocity. Compliance Built for Scale.",
   "brand_identity": {
-    "name": "Gaussians",
-    "tagline": "Security Engineered for Velocity. Compliance Built for Scale.",
-    "archetype": "Cybersecurity Tactical Precision & Executive Corporate Luxury",
-    "theme": "Dark Obsidian Glassmorphism with Emerald & Cyber Cyan Pulsing Glows"
-  },
-  "typography": {
-    "primary_heading_font": "Plus Jakarta Sans / Outfit (Display Sans)",
-    "secondary_serif_font": "Playfair Display / Newsreader (For Editorial Manifesto Touch)",
-    "body_font": "DM Sans / Inter",
-    "monospace_font": "JetBrains Mono / Fira Code",
-    "scale": {
-      "h1": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight md:leading-none",
-      "h2": "text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight leading-snug",
-      "h3": "text-xl sm:text-2xl font-semibold tracking-tight",
-      "h4": "text-lg sm:text-xl font-medium",
-      "body": "text-base text-slate-300 leading-relaxed",
-      "body_small": "text-sm text-slate-400 leading-normal",
-      "overline": "text-xs font-mono tracking-[0.25em] uppercase text-emerald-400 font-semibold",
-      "code_stat": "font-mono text-xs sm:text-sm text-cyan-400"
-    }
+    "logo_swoosh_color": "#7570D4",
+    "primary_accent": "#7570D4",
+    "primary_accent_hover": "#5F59BC",
+    "primary_accent_subtle": "rgba(117, 112, 212, 0.08)",
+    "aesthetic_core": "Ultra-clean Apple-like whitespace + BMW precision engineering. Stark white canvases, crisp dark wordmarks, hairline slate borders, single-accent periwinkle purple highlights, and cinematic background video/imagery."
   },
   "colors": {
-    "base": {
-      "dark_bg": "#090D16",
-      "surface_dark": "#0F172A",
-      "surface_card": "rgba(15, 23, 42, 0.75)",
-      "surface_border": "rgba(51, 65, 85, 0.5)",
-      "text_primary": "#F8FAFC",
-      "text_secondary": "#94A3B8",
-      "text_muted": "#64748B"
+    "background_primary": "#FFFFFF",
+    "background_secondary": "#F8FAFC",
+    "background_tertiary": "#F1F5F9",
+    "background_card": "#FFFFFF",
+    "background_glass": "rgba(255, 255, 255, 0.85)",
+    "text_primary": "#0F172A",
+    "text_secondary": "#475569",
+    "text_muted": "#64748B",
+    "text_brand": "#7570D4",
+    "border_subtle": "#E2E8F0",
+    "border_hover": "#CBD5E1",
+    "border_brand": "rgba(117, 112, 212, 0.3)",
+    "shadow_sm": "0 1px 3px rgba(15, 23, 42, 0.04), 0 1px 2px rgba(15, 23, 42, 0.02)",
+    "shadow_md": "0 10px 30px -5px rgba(15, 23, 42, 0.05)",
+    "shadow_lg": "0 20px 40px -15px rgba(15, 23, 42, 0.08)",
+    "shadow_brand_glow": "0 8px 25px -4px rgba(117, 112, 212, 0.25)"
+  },
+  "typography": {
+    "display_font": "Outfit, sans-serif",
+    "serif_accent_font": "Newsreader, Georgia, serif",
+    "body_font": "'DM Sans', sans-serif",
+    "mono_font": "'JetBrains Mono', monospace",
+    "headings": {
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.08]",
+      "h2_section": "text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 leading-tight",
+      "h3_card": "text-xl sm:text-2xl font-semibold tracking-tight text-slate-900",
+      "h4_sub": "text-lg font-medium text-slate-800"
     },
-    "accents": {
-      "emerald_primary": "#10B981",
-      "emerald_glow": "rgba(16, 185, 129, 0.25)",
-      "cyber_cyan": "#06B6D4",
-      "cyber_cyan_glow": "rgba(6, 182, 212, 0.25)",
-      "electric_indigo": "#6366F1",
-      "warning_amber": "#F59E0B"
+    "body": {
+      "large": "text-lg sm:text-xl text-slate-600 leading-relaxed font-normal",
+      "base": "text-base text-slate-600 leading-relaxed font-normal",
+      "small": "text-sm text-slate-500 leading-normal"
     },
-    "gradients": {
-      "hero_radial": "radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.15) 0%, rgba(6, 182, 212, 0.08) 35%, rgba(9, 13, 22, 1) 100%)",
-      "card_beam": "linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(6, 182, 212, 0.05) 50%, transparent 100%)",
-      "text_gradient": "bg-gradient-to-r from-white via-slate-100 to-slate-400 bg-clip-text text-transparent"
+    "eyebrow_label": "font-mono text-xs uppercase tracking-[0.2em] font-semibold text-brand-500",
+    "serif_italic_quote": "font-serif italic font-normal text-slate-700 text-lg sm:text-xl"
+  },
+  "spacing_and_layout": {
+    "container_padding": "px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto",
+    "section_vertical_padding": "py-24 lg:py-32",
+    "card_internal_padding": "p-8 sm:p-10",
+    "gap_grid": "gap-8 lg:gap-12",
+    "bento_grid_structure": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-8"
+  },
+  "media": {
+    "hero_background_video": {
+      "url": "https://assets.mixkit.co/videos/preview/mixkit-cyber-security-code-scrolling-on-screen-41559-large.mp4",
+      "fallback_image": "https://images.unsplash.com/photo-1496307653780-42ee777d4833?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "overlay": "bg-white/80 backdrop-blur-sm"
+    },
+    "image_urls": {
+      "architecture_minimal": [
+        "https://images.unsplash.com/photo-1496307653780-42ee777d4833?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1483366774565-c783b9f70e2c?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1549791084-5f78368b208b?crop=entropy&cs=srgb&fm=jpg&q=85"
+      ],
+      "leadership_megha": "https://images.unsplash.com/photo-1614786269829-d24616faf56d?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "leadership_mallikarjuna": "https://images.unsplash.com/photo-1686434538659-bb72333a1054?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "community_lab": "https://images.unsplash.com/photo-1543067361-9bf996edf6ff?crop=entropy&cs=srgb&fm=jpg&q=85"
     }
   },
-  "visual_enhancers": {
-    "glassmorphism": "backdrop-blur-xl bg-slate-900/70 border border-slate-800/80 shadow-[0_8px_32px_rgba(0,0,0,0.37)]",
-    "tracing_beam": "relative rounded-2xl border border-slate-800 bg-slate-900/60 p-6 md:p-8 hover:border-emerald-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(16,185,129,0.15)]",
-    "status_pill": "inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono bg-emerald-950/60 border border-emerald-500/40 text-emerald-400 shadow-[0_0_12px_rgba(16,185,129,0.2)]",
-    "grid_pattern": "bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-30"
-  },
-  "image_urls": {
-    "abstract_security_bg": {
-      "url": "https://images.unsplash.com/photo-1561233835-f937539b95b9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwyfHxjeWJlcnNlY3VyaXR5JTIwdGVjaCUyMGNvcnBvcmF0ZSUyMGFic3RyYWN0JTIwYmFja2dyb3VuZCUyMHNlcnZlciUyMG1hdHJpeCUyMGRhcmt8ZW58MHx8fHwxNzg5MjA1NzUyfDA&ixlib=rb-4.1.0&q=85",
-      "description": "High tech illuminated server rack matrix node background",
-      "usage": "Hero background grid graphic and security visualizer overlay"
+  "components_design": {
+    "navbar": {
+      "container": "fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200/60 transition-all duration-300",
+      "logo": "flex items-center gap-3 font-display font-bold text-xl text-slate-900 tracking-tight",
+      "nav_link": "text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors px-3 py-2 rounded-lg hover:bg-slate-100/60",
+      "active_link": "text-slate-900 font-semibold bg-slate-100/80",
+      "cta_button": "bg-slate-900 hover:bg-slate-800 text-white text-sm font-medium px-5 py-2.5 rounded-full transition-all duration-200 shadow-sm hover:shadow-md hover:scale-[1.02] active:scale-[0.98]"
     },
-    "cyber_grid_mesh": {
-      "url": "https://images.unsplash.com/photo-1746470427686-4c3551f3d689?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwzfHxjeWJlcnNlY3VyaXR5JTIwdGVjaCUyMGNvcnBvcmF0ZSUyMGFic3RyYWN0JTIwYmFja2dyb3VuZCUyMHNlcnZlciUyMG1hdHJpeCUyMGRhcmt8ZW58MHx8fHwxNzg5MjA1NzUyfDA&ixlib=rb-4.1.0&q=85",
-      "description": "Blue and black geometric security matrix mesh",
-      "usage": "Capabilities bento box background highlight & Gaussians Forward lab"
+    "hero": {
+      "headline_revealer": "Masked line-by-line kinetic entrance animation with framer-motion",
+      "metrics_bar": "bg-white/90 backdrop-blur-md border border-slate-200/80 rounded-2xl p-6 sm:p-8 shadow-md grid grid-cols-2 md:grid-cols-4 gap-6 text-center"
     },
-    "leadership_megha_bakshi": {
-      "url": "https://images.unsplash.com/photo-1762341124796-530c0085f7d8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjBleGVjdXRpdmUlMjBsZWFkZXJzaGlwJTIwcG9ydHJhaXQlMjBwcm9mZXNzaW9uYWwlMjBvZmZpY2V8ZW58MHx8fHwxNzg5MjA1NzUyfDA&ixlib=rb-4.1.0&q=85",
-      "description": "Megha Bakshi - Managing Director & Global GRC Leader portrait",
-      "usage": "Leadership section executive profile card"
+    "bento_capabilities": {
+      "card_base": "bg-white rounded-2xl border border-slate-200/80 p-8 hover:border-brand-500/40 hover:shadow-lg transition-all duration-300 relative overflow-hidden group",
+      "card_hero_span": "col-span-full md:col-span-8 lg:col-span-8 bg-gradient-to-br from-white to-slate-50/80",
+      "card_tall_span": "col-span-full md:col-span-4 lg:col-span-4 bg-white"
     },
-    "leadership_mallikarjuna_reddy": {
-      "url": "https://images.unsplash.com/photo-1737574821698-862e77f044c1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwyfHxjb3Jwb3JhdGUlMjBleGVjdXRpdmUlMjBsZWFkZXJzaGlwJTIwcG9ydHJhaXQlMjBwcm9mZXNzaW9uYWwlMjBvZmZpY2V8ZW58MHx8fHwxNzg5MjA1NzUyfDA&ixlib=rb-4.1.0&q=85",
-      "description": "Mallikarjuna Reddy - Chief Information Security Architect portrait",
-      "usage": "Leadership section executive profile card"
+    "matrix_table": {
+      "container": "w-full border border-slate-200/80 rounded-2xl overflow-hidden bg-white shadow-sm",
+      "header_row": "bg-slate-50/80 border-b border-slate-200 text-slate-900 text-sm font-semibold",
+      "cell_gaussians": "bg-brand-500/5 font-semibold text-brand-600 border-x border-slate-200/60"
     },
-    "gurgaon_hq_skyline": {
-      "url": "https://images.unsplash.com/photo-1761413049230-2c0dd9af7c9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjB0ZWNoJTIwb2ZmaWNlJTIwYnVpbGRpbmclMjBndXJnYW9uJTIwYXJjaGl0ZWN0dXJlJTIwc2t5c2NyYXBlciUyMG5pZ2h0fGVufDB8fHx8MTc4OTIwNTc2MHww&ixlib=rb-4.1.0&q=85",
-      "description": "Gurgaon Cyber City HQ illuminated skyscraper at night",
-      "usage": "Contact Page & Global Operations Hub banner"
+    "frameworks_marquee": {
+      "container": "bg-slate-50/60 border-y border-slate-200/60 py-10 overflow-hidden",
+      "badge": "inline-flex items-center gap-2 px-6 py-3 rounded-full border border-slate-200 bg-white text-slate-800 font-mono text-sm shadow-sm hover:border-brand-500/40 transition-colors"
     },
-    "office_expressway": {
-      "url": "https://images.unsplash.com/photo-1514392181188-8f5d54262fa5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZWNoJTIwb2ZmaWNlJTIwYnVpbGRpbmclMjBndXJnYW9uJTIwYXJjaGl0ZWN0dXJlJTIwc2t5c2NyYXBlciUyMG5pZ2h0fGVufDB8fHx8MTc4OTIwNTc2MHww&ixlib=rb-4.1.0&q=85",
-      "description": "Modern technology corridor highway light trails",
-      "usage": "About Us manifesto background accent"
+    "leadership_cards": {
+      "card": "bg-white border border-slate-200/80 rounded-2xl overflow-hidden group hover:shadow-xl transition-all duration-300",
+      "image": "aspect-[4/3] w-full object-cover group-hover:scale-105 transition-transform duration-500",
+      "content": "p-8"
+    },
+    "contact_form": {
+      "input_field": "w-full rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3.5 text-sm text-slate-900 placeholder:text-slate-400 outline-none transition-all duration-200 focus:border-brand-500 focus:bg-white focus:ring-4 focus:ring-brand-500/10",
+      "submit_button": "w-full bg-brand-500 hover:bg-brand-600 text-white font-medium py-4 px-6 rounded-xl transition-all duration-200 shadow-md hover:shadow-brand-glow text-center cursor-pointer"
+    },
+    "footer": {
+      "container": "bg-slate-900 text-slate-300 py-20 border-t border-slate-800",
+      "logo_wordmark": "font-display font-bold text-3xl text-white tracking-tight"
     }
   },
-  "layout_architecture": {
-    "pages": [
-      {
-        "route": "/",
-        "name": "Home",
-        "sections": [
-          "Sticky Glassmorphism Nav Header",
-          "Kinetic Hero Section with Live Security Status Badge & Metric reveal",
-          "Trust Metrics Counter Bar ($500M+ Tech Asset Coverage, 200+ Audits, 100% Pass Rate, <24hr Incident Response)",
-          "Frameworks Infinite Horizontal Ticker (SOC 2, ISO 27001, ISO 42001, NIST, PCI DSS, HIPAA, GDPR, FedRAMP, DORA, NIS2)",
-          "6-Tile Bento Capabilities Box (SOC 2/ISO Readiness, AI Governance & ISO 42001, vCISO Leadership, Cloud Security & DevSecOps, Penetration Testing & Red Teaming, Regulatory Compliance)",
-          "Gaussians Advantage Comparison Matrix (Gaussians vs Traditional Big 4 vs Legacy Tooling)",
-          "4 Engagement & Delivery Models (vCISO Subscription, Audit-Ready Sprint, Continuous Compliance Managed Service, Custom Red Team Assessment)",
-          "Leadership Profiles (Megha Bakshi, Mallikarjuna Reddy)",
-          "Gaussians Forward Community Lab & Open Source Security Tools",
-          "Client Testimonials & Executive Proof Carousel",
-          "Global HQ Contact Hub (Gurgaon, India)",
-          "Footer with Framework Badges & Legal Navigation"
-        ]
-      },
-      {
-        "route": "/services",
-        "name": "Services",
-        "sections": [
-          "Header",
-          "Deep-Dive Service Bento & Deliverables Matrix",
-          "Interactive Compliance Timeline Calculator",
-          "Framework Scope Selector (SOC 2 Type II vs ISO 42001 AI Risk)",
-          "CTA & Consultation Request",
-          "Footer"
-        ]
-      },
-      {
-        "route": "/about",
-        "name": "About",
-        "sections": [
-          "Header",
-          "Company Manifesto (Chapters 01 to 04)",
-          "Founder Story & Technical Philosophy",
-          "Leadership Team & Advisors",
-          "Gaussians Forward Research Initiatives",
-          "Footer"
-        ]
-      },
-      {
-        "route": "/insights",
-        "name": "Insights & Intelligence",
-        "sections": [
-          "Header",
-          "Featured Security Briefs & ISO 42001 AI Compliance Playbooks",
-          "Filterable Intelligence Feed (AI Security, Cloud Audits, Regulatory Bulletins)",
-          "Newsletter / Whitepaper Download Modal",
-          "Footer"
-        ]
-      },
-      {
-        "route": "/contact",
-        "name": "Contact",
-        "sections": [
-          "Header",
-          "Static Interactive Consultation Request Form (with framework selection pills, budget range, date picker, response SLA badge)",
-          "Global Hub Location (Gurgaon HQ details + Map graphic)",
-          "Emergency Breach Incident Response SLA Banner (<24 Hours)",
-          "Footer"
-        ]
-      }
-    ]
-  },
-  "component_guidelines": {
-    "navbar": "Glassmorphic blur container with fixed position, z-50, logo with cyan node animation, navigation links for Home, Services, About, Insights, Contact, dark mode status indicator, and a 'Request Audit' CTA button.",
-    "hero_section": "Obsidian dark background with animated line-by-line kinetic title reveal using Framer Motion. Features a glowing status badge 'SYSTEM ACTIVE: 2026 GRC ENGINE', interactive security node animation graphic, and trust metrics counter.",
-    "bento_grid": "Asymmetric 6-card bento box mixing spans (col-span-1, col-span-2, row-span-2). Each card features micro-hover glows, hover scaling, line-icon badges, key capabilities list, and interactive modal/drawer preview.",
-    "comparison_matrix": "Interactive tabular grid displaying feature-by-feature comparison between Gaussians, Traditional Advisory Firms, and Automated SaaS Platforms. Highlights Gaussians' speed, human expertise, and AI governance integration.",
-    "framework_marquee": "Smooth horizontal continuous marquee using CSS keyframes or seamless animation for SOC 2, ISO 27001, ISO 42001, NIST CSF 2.0, PCI DSS 4.0, HIPAA, GDPR, FedRAMP, DORA, NIS2 with security status pills.",
-    "leadership_cards": "Glassmorphism executive cards featuring portraits of Megha Bakshi and Mallikarjuna Reddy with bio modal, key credentials, and LinkedIn links.",
-    "contact_form": "Static high-precision input form (data-testid included on all fields) with custom multi-select pills for compliance frameworks, timeline selector, submit confirmation state, and contact info for Gurgaon HQ."
-  },
-  "motion_and_interactions": {
-    "smooth_scroll": "Use Lenis momentum smooth scroll on main scroll containers for luxury fluid motion.",
-    "scroll_reveal": "Use framer-motion variants with staggered children reveal (opacity: [0, 1], y: [20, 0]) for each section.",
-    "kinetic_text": "Hero title uses masked split-line keyframe reveal for impactful typography animation.",
-    "node_glow": "Interactive CSS pulse and canvas/SVG line connections for cyber security node network in hero."
+  "motion_directives": {
+    "lenis_smooth_scroll": "Configured with duration 1.15, smoothWheel: true",
+    "framer_motion_stagger": "Variants for children stagger (0.08s gap)",
+    "scroll_reveal": "Initial y: 20, opacity: 0 -> animate inView y: 0, opacity: 1, duration 0.6s easeOut"
   },
   "testing_requirements": {
-    "data_testid_convention": "All interactive elements, buttons, form inputs, navigation links, tabs, and metric displays MUST include kebab-case data-testid attributes.",
-    "examples": [
-      "data-testid=\"nav-link-services\"",
-      "data-testid=\"hero-cta-button\"",
-      "data-testid=\"contact-form-submit-button\"",
-      "data-testid=\"bento-card-ai-governance\"",
-      "data-testid=\"contact-input-email\"",
-      "data-testid=\"contact-input-framework-soc2\""
-    ]
+    "data_testid_mandatory": true,
+    "pattern": "kebab-case data-testid on all interactive buttons, inputs, links, tabs, and key metrics"
   },
-  "instructions_to_main_agent": [
-    "Build a high-end multi-page React application using react-router-dom for route transitions.",
-    "Ensure all 5 pages (Home, Services, About, Insights, Contact) are fully functional with rich, detailed content.",
-    "Apply dark mode obsidian theme by default (#090D16 base background) with glowing emerald (#10B981) and cyber cyan (#06B6D4) accents.",
-    "Implement Lenis smooth momentum scrolling or custom smooth scroll wrapper for ultra-premium feel.",
-    "Include kinetic line-by-line reveal animation in the hero title.",
-    "Use framer-motion for smooth section entry triggers and hover state elevation.",
-    "Use real images provided in image_urls for leadership, Gurgaon hub, and abstract security graphics.",
-    "Include every single content detail mentioned in the problem statement (Trust metrics bar, 6-tile bento, comparison matrix, 4 delivery models, leadership profiles, Gaussians Forward lab, client testimonials, Gurgaon contact hub).",
-    "Add data-testid attributes to all interactive elements, buttons, inputs, links, cards, and tabs.",
-    "Make the contact form static with front-end state management (showing success toast via sonner upon submission)."
-  ],
+  "instructions_to_main_agent": "Ensure index.css and all page components (Home.js, Services.js, About.js, Insights.js, Contact.js, Navbar.js, Footer.js) fully adopt the light, ultra-clean white theme tokens. Remove all legacy dark-glass classes (e.g., bg-slate-900, border-slate-800 dark dark-glass styling) and replace with clean white backgrounds, slate typography, hairline slate-200 borders, soft shadows, and periwinkle purple accent highlights. Retain full content architecture and multi-page routing.",
   "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
-    "Avoid generic centered layouts, simplistic gradients, and uniform styling.",
-    "Create depth through layered design elements with z-index hierarchy.",
-    "Use glass-morphism effects with backdrop filters (12-24px blur).",
-    "You MUST NOT apply universal transition (e.g. transition: all). Always add transitions for specific interactive elements like button, input excluding transforms.",
-    "You MUST NOT center align the app container. Preserve natural layout flow.",
-    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style.",
-    "NEVER use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯 for icons. Use lucide-react or phosphor icons.",
-    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
-    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
-    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations separate good from extraordinary.",
-    "Main agent relies on these image URLs. Missing categories = main agent will use placeholder text which is FORBIDDEN.",
-    "Prioritize using pre-existing components from src/components/ui when applicable.",
-    "Use sonner for toast notifications."
+    "Never use dark background gradients on light theme sections.",
+    "Maintain high APCA contrast for text readability on light surfaces.",
+    "Ensure generous vertical spacing (py-24 to py-32) and card inner padding (p-8 to p-10).",
+    "Include data-testid on every interactive element."
   ]
 }

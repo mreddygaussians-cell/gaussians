@@ -27,10 +27,10 @@ function ConsultForm() {
   };
 
   return (
-    <div className="glass-card relative overflow-hidden p-8 sm:p-10" data-testid="contact-form-card">
+    <div className="card-white relative overflow-hidden p-8 shadow-[0_20px_50px_-20px_rgba(15,23,42,0.12)] sm:p-10" data-testid="contact-form-card">
       <div
         className="pointer-events-none absolute inset-0"
-        style={{ background: "radial-gradient(circle at 100% 0%, rgba(117,112,212,0.1), transparent 50%)" }}
+        style={{ background: "radial-gradient(circle at 100% 0%, rgba(117,112,212,0.07), transparent 50%)" }}
       />
       <AnimatePresence mode="wait">
         {submitted ? (
@@ -42,15 +42,16 @@ function ConsultForm() {
             className="relative flex min-h-[420px] flex-col items-start justify-center"
             data-testid="contact-form-success"
           >
-            <span className="grid h-16 w-16 place-items-center rounded-2xl border border-brand-500/40 bg-brand-950/50">
-              <CheckCircle2 className="h-8 w-8 text-brand-400" />
+            <span className="grid h-16 w-16 place-items-center rounded-2xl border border-brand-500/30 bg-brand-500/[0.08]">
+              <CheckCircle2 className="h-8 w-8 text-brand-500" />
             </span>
-            <h2 className="mt-8 font-display text-2xl font-bold text-white sm:text-3xl">
-              Request <em className="font-serif italic text-brand-400">logged.</em>
+            <h2 className="mt-8 font-display text-2xl font-bold text-slate-900 sm:text-3xl">
+              Request <em className="font-serif italic text-brand-500">logged.</em>
             </h2>
-            <p className="mt-4 max-w-md text-sm leading-relaxed text-slate-400">
+            <p className="mt-4 max-w-md text-sm leading-relaxed text-slate-500">
               Thank you, {form.name.split(" ")[0] || "there"}. A Gaussians practice director will reach out at{" "}
-              <span className="text-slate-200">{form.email}</span> within one business day to scope your consultation.
+              <span className="font-medium text-slate-800">{form.email}</span> within one business day to scope your
+              consultation.
             </p>
             {frameworks.length > 0 && (
               <div className="mt-6 flex flex-wrap gap-2">
@@ -67,7 +68,7 @@ function ConsultForm() {
                 setModel("");
               }}
               data-testid="contact-form-reset-button"
-              className="mt-10 font-mono text-[11px] uppercase tracking-[0.22em] text-slate-400 transition-colors duration-300 hover:text-brand-400"
+              className="mt-10 font-mono text-[11px] uppercase tracking-[0.22em] text-slate-400 transition-colors duration-300 hover:text-brand-600"
             >
               Submit another request
             </button>
@@ -85,20 +86,20 @@ function ConsultForm() {
           >
             <div className="grid gap-5 sm:grid-cols-2">
               <div>
-                <label htmlFor="contact-name" className="mb-2 block font-mono text-[10px] uppercase tracking-[0.22em] text-slate-500">Full name</label>
+                <label htmlFor="contact-name" className="mb-2 block font-mono text-[10px] uppercase tracking-[0.22em] text-slate-400">Full name</label>
                 <input id="contact-name" required value={form.name} onChange={set("name")} placeholder="Ada Lovelace" className="field" data-testid="contact-input-name" />
               </div>
               <div>
-                <label htmlFor="contact-email" className="mb-2 block font-mono text-[10px] uppercase tracking-[0.22em] text-slate-500">Work email</label>
+                <label htmlFor="contact-email" className="mb-2 block font-mono text-[10px] uppercase tracking-[0.22em] text-slate-400">Work email</label>
                 <input id="contact-email" type="email" required value={form.email} onChange={set("email")} placeholder="ada@company.com" className="field" data-testid="contact-input-email" />
               </div>
             </div>
             <div className="mt-5">
-              <label htmlFor="contact-company" className="mb-2 block font-mono text-[10px] uppercase tracking-[0.22em] text-slate-500">Company</label>
+              <label htmlFor="contact-company" className="mb-2 block font-mono text-[10px] uppercase tracking-[0.22em] text-slate-400">Company</label>
               <input id="contact-company" required value={form.company} onChange={set("company")} placeholder="Company Inc." className="field" data-testid="contact-input-company" />
             </div>
             <div className="mt-7">
-              <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.22em] text-slate-500">Frameworks in scope</p>
+              <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.22em] text-slate-400">Frameworks in scope</p>
               <div className="flex flex-wrap gap-2">
                 {FRAMEWORK_OPTIONS.map((f) => (
                   <button
@@ -108,8 +109,8 @@ function ConsultForm() {
                     data-testid={`contact-input-framework-${f.toLowerCase().replace(/[^a-z0-9]+/g, "")}`}
                     className={`rounded-full px-4 py-2 font-mono text-[11px] tracking-wider transition-[background-color,border-color,color] duration-300 ${
                       frameworks.includes(f)
-                        ? "border border-brand-500/60 bg-brand-950/60 text-brand-400 shadow-[0_0_12px_rgba(117,112,212,0.2)]"
-                        : "border border-slate-700/80 text-slate-400 hover:border-slate-500 hover:text-slate-200"
+                        ? "border border-brand-500/60 bg-brand-500/[0.09] text-brand-600"
+                        : "border border-slate-200 bg-white text-slate-500 hover:border-slate-300 hover:text-slate-800"
                     }`}
                   >
                     {f}
@@ -118,7 +119,7 @@ function ConsultForm() {
               </div>
             </div>
             <div className="mt-7">
-              <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.22em] text-slate-500">Engagement model</p>
+              <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.22em] text-slate-400">Engagement model</p>
               <div className="flex flex-wrap gap-2">
                 {MODELS.map((m) => (
                   <button
@@ -128,8 +129,8 @@ function ConsultForm() {
                     data-testid={`contact-input-model-${m.tag.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
                     className={`rounded-full px-4 py-2 font-mono text-[11px] tracking-wider transition-[background-color,border-color,color] duration-300 ${
                       model === m.tag
-                        ? "border border-cyan-400/60 bg-cyan-950/50 text-cyan-300 shadow-[0_0_12px_rgba(6,182,212,0.2)]"
-                        : "border border-slate-700/80 text-slate-400 hover:border-slate-500 hover:text-slate-200"
+                        ? "border border-slate-900 bg-slate-900 text-white"
+                        : "border border-slate-200 bg-white text-slate-500 hover:border-slate-300 hover:text-slate-800"
                     }`}
                   >
                     {m.tag}
@@ -138,7 +139,7 @@ function ConsultForm() {
               </div>
             </div>
             <div className="mt-7">
-              <label htmlFor="contact-message" className="mb-2 block font-mono text-[10px] uppercase tracking-[0.22em] text-slate-500">What are you trying to achieve?</label>
+              <label htmlFor="contact-message" className="mb-2 block font-mono text-[10px] uppercase tracking-[0.22em] text-slate-400">What are you trying to achieve?</label>
               <textarea
                 id="contact-message"
                 rows={4}
@@ -152,12 +153,12 @@ function ConsultForm() {
             <button
               type="submit"
               data-testid="contact-form-submit-button"
-              className="group mt-8 inline-flex w-full items-center justify-center gap-2.5 rounded-xl bg-brand-500 px-8 py-4 font-display text-sm font-semibold text-[#15142E] transition-[background-color,box-shadow,transform] duration-300 hover:-translate-y-0.5 hover:bg-brand-400 hover:shadow-[0_12px_32px_rgba(117,112,212,0.4)] sm:w-auto"
+              className="group mt-8 inline-flex w-full items-center justify-center gap-2.5 rounded-xl bg-brand-500 px-8 py-4 font-display text-sm font-semibold text-white transition-[background-color,box-shadow,transform] duration-300 hover:-translate-y-0.5 hover:bg-brand-600 hover:shadow-[0_12px_32px_-6px_rgba(117,112,212,0.5)] sm:w-auto"
             >
               Request Consultation
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </button>
-            <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.2em] text-slate-600">
+            <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.2em] text-slate-300">
               Response SLA: within one business day
             </p>
           </motion.form>
@@ -171,31 +172,31 @@ function HubPanel() {
   return (
     <div className="flex flex-col gap-6">
       <Reveal delay={0.1}>
-        <div className="glass-card overflow-hidden" data-testid="contact-hq-card">
+        <div className="card-white overflow-hidden shadow-[0_20px_50px_-20px_rgba(15,23,42,0.12)]" data-testid="contact-hq-card">
           <div className="relative h-52 overflow-hidden">
             <img src={IMAGES.gurgaon} alt="Gurgaon headquarters skyline at night" className="h-full w-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0B101C] to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
             <div className="absolute bottom-4 left-5">
-              <span className="status-pill">GLOBAL HEADQUARTERS</span>
+              <span className="status-pill bg-white/90 backdrop-blur">GLOBAL HEADQUARTERS</span>
             </div>
           </div>
           <div className="p-7">
-            <ul className="space-y-4 text-sm text-slate-300">
+            <ul className="space-y-4 text-sm text-slate-600">
               <li className="flex items-start gap-3">
-                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
-                <a href={`mailto:${CONTACT.email}`} data-testid="contact-email-link" className="transition-colors duration-300 hover:text-brand-400">{CONTACT.email}</a>
+                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-brand-500" />
+                <a href={`mailto:${CONTACT.email}`} data-testid="contact-email-link" className="transition-colors duration-300 hover:text-brand-600">{CONTACT.email}</a>
               </li>
               <li className="flex items-start gap-3">
-                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
-                <a href={`tel:${CONTACT.phone.replace(/\s/g, "")}`} data-testid="contact-phone-link" className="transition-colors duration-300 hover:text-brand-400">{CONTACT.phone}</a>
+                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand-500" />
+                <a href={`tel:${CONTACT.phone.replace(/\s/g, "")}`} data-testid="contact-phone-link" className="transition-colors duration-300 hover:text-brand-600">{CONTACT.phone}</a>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand-500" />
                 <span>{CONTACT.address}</span>
               </li>
               <li className="flex items-start gap-3">
-                <Globe2 className="mt-0.5 h-4 w-4 shrink-0 text-cyan-400" />
-                <span className="text-slate-400">{CONTACT.regions}</span>
+                <Globe2 className="mt-0.5 h-4 w-4 shrink-0 text-brand-500" />
+                <span className="text-slate-500">{CONTACT.regions}</span>
               </li>
             </ul>
           </div>
@@ -203,15 +204,15 @@ function HubPanel() {
       </Reveal>
       <Reveal delay={0.2}>
         <div
-          className="flex items-start gap-4 rounded-2xl border border-amber-500/30 bg-amber-950/20 p-6"
+          className="flex items-start gap-4 rounded-2xl border border-amber-200/80 bg-amber-50/70 p-6"
           data-testid="contact-sla-banner"
         >
-          <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-amber-500/40 bg-amber-950/50">
-            <Siren className="h-5 w-5 text-amber-400" />
+          <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-amber-200 bg-white">
+            <Siren className="h-5 w-5 text-amber-500" />
           </span>
           <div>
-            <h3 className="font-display text-base font-semibold text-amber-300">Incident? We respond in &lt;24 hours.</h3>
-            <p className="mt-1.5 text-sm leading-relaxed text-slate-400">
+            <h3 className="font-display text-base font-semibold text-amber-800">Incident? We respond in &lt;24 hours.</h3>
+            <p className="mt-1.5 text-sm leading-relaxed text-slate-500">
               Emergency breach and audit-escalation response with rapid engagement. Call the hotline directly.
             </p>
           </div>

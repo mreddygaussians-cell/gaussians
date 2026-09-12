@@ -36,7 +36,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
-      <div className="App font-body text-slate-100">
+      <div className="App font-body text-slate-900">
         <div className="noise" aria-hidden="true" />
         <ScrollToTop />
         <Navbar />
