@@ -34,8 +34,10 @@ export default function App() {
     };
   }, []);
 
+  const basename = window.location.pathname.startsWith("/gaussians") ? "/gaussians" : "";
+
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <div className="App font-body text-slate-900">
         <div className="noise" aria-hidden="true" />
         <ScrollToTop />
