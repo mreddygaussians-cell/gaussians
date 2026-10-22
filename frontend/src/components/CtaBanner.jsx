@@ -16,14 +16,12 @@ export default function CtaBanner() {
           />
           <div className="relative flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-brand-300">Zero-surprise outcomes</p>
+              <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-brand-300">Connect With Us</p>
               <h2 className="mt-5 max-w-2xl font-display text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl">
-                Compliance, at the <em className="font-serif font-medium italic text-brand-300">speed</em> of your
-                roadmap.
+                Take the next step with <em className="font-serif font-medium italic text-brand-300">clarity and confidence.</em>
               </h2>
               <p className="mt-5 max-w-xl text-sm leading-relaxed text-slate-400">
-                From rapid SOC 2, ISO 27001, and ISO 42001 readiness to fully managed compliance operations — senior
-                practitioners, hands-on execution, relentless velocity.
+                Whether you are preparing for an audit, building a compliance program, improving your cybersecurity posture, managing third-party risk, or looking for advisory support, our team is ready to become an extension of your team.
               </p>
             </div>
             <Link
@@ -31,7 +29,7 @@ export default function CtaBanner() {
               data-testid="cta-banner-button"
               className="group inline-flex shrink-0 items-center gap-2.5 rounded-full bg-white px-8 py-4 font-display text-sm font-semibold text-slate-900 transition-[background-color,color,box-shadow,transform] duration-300 hover:-translate-y-0.5 hover:bg-brand-500 hover:text-white hover:shadow-[0_12px_36px_rgba(117,112,212,0.45)]"
             >
-              Start the Conversation
+              Contact Us
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
           </div>

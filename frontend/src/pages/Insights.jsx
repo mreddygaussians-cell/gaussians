@@ -28,9 +28,9 @@ function Featured({ article }) {
             {article.title}
           </h2>
           <p className="mt-4 max-w-xl text-sm leading-relaxed text-slate-500">{article.excerpt}</p>
-          <div className="mt-6 flex items-center gap-4 font-mono text-[11px] uppercase tracking-[0.2em] text-slate-400">
+          <div className="mt-6 flex items-center gap-4 font-mono text-[11px] font-medium uppercase tracking-[0.2em] text-slate-600">
             <span>{article.date}</span>
-            <span className="h-1 w-1 rounded-full bg-slate-300" />
+            <span className="h-1 w-1 rounded-full bg-slate-400" />
             <span>{article.read} read</span>
           </div>
         </div>
@@ -84,14 +84,14 @@ function Feed() {
               <div>
                 <div className="flex items-center justify-between">
                   <span className="chip">{a.category}</span>
-                  <ArrowUpRight className="h-4 w-4 text-slate-300 transition-[color,transform] duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-brand-500" />
+                  <ArrowUpRight className="h-4 w-4 text-slate-400 transition-[color,transform] duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-brand-500" />
                 </div>
                 <h3 className="mt-5 font-display text-lg font-semibold leading-snug text-slate-900">{a.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-slate-500">{a.excerpt}</p>
               </div>
-              <div className="mt-6 flex items-center gap-4 border-t border-slate-100 pt-4 font-mono text-[10px] uppercase tracking-[0.2em] text-slate-400">
+              <div className="mt-6 flex items-center gap-4 border-t border-slate-100 pt-4 font-mono text-[10px] font-medium uppercase tracking-[0.2em] text-slate-600">
                 <span>{a.date}</span>
-                <span className="h-1 w-1 rounded-full bg-slate-300" />
+                <span className="h-1 w-1 rounded-full bg-slate-400" />
                 <span>{a.read} read</span>
               </div>
             </motion.article>

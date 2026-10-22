@@ -154,7 +154,7 @@ function DeliveryModels() {
                   ))}
                 </ul>
                 <div className="mt-8 border-t border-slate-100 pt-6">
-                  <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-slate-400">Ideal for</p>
+                  <p className="font-mono text-[10px] font-medium uppercase tracking-[0.25em] text-slate-600">Ideal for</p>
                   <p className="mt-2 font-serif text-lg italic text-slate-700">{model.ideal}</p>
                 </div>
               </motion.div>
@@ -199,9 +199,9 @@ export default function Services() {
     <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} data-testid="services-page">
       <PageHeader
         chapter={{ no: "01", label: "Services" }}
-        title="Capabilities built for"
-        accent="zero surprises."
-        sub="From AI governance to turnkey managed compliance — six practices engineered to make audits boring and enterprise deals faster."
+        title="Your Compliance Journey."
+        accent="Our Commitment."
+        sub="Whether you're preparing for an audit, strengthening your cybersecurity posture, building a compliance function, or scaling your team, Gaussians works alongside you every step of the way. We become an extension of your team, combining deep cybersecurity and compliance expertise with practical execution, operational ownership, and cost-effective delivery."
       />
       <ServiceExplorer />
       <Marquee items={FRAMEWORKS} />

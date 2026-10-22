@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Mail, Phone, MapPin, Globe2, Siren, CheckCircle2, ArrowRight } from "lucide-react";
+import { Mail, Phone, MapPin, Globe2, CheckCircle2, ArrowRight } from "lucide-react";
 import { toast } from "sonner";
 import { Reveal, PageHeader, EASE } from "@/components/Reveal";
 import { CONTACT, FRAMEWORKS, MODELS, IMAGES } from "@/data/content";
@@ -68,7 +68,7 @@ function ConsultForm() {
                 setModel("");
               }}
               data-testid="contact-form-reset-button"
-              className="mt-10 font-mono text-[11px] uppercase tracking-[0.22em] text-slate-400 transition-colors duration-300 hover:text-brand-600"
+              className="mt-10 font-mono text-[11px] font-medium uppercase tracking-[0.22em] text-slate-600 transition-colors duration-300 hover:text-brand-600"
             >
               Submit another request
             </button>
@@ -86,20 +86,20 @@ function ConsultForm() {
           >
             <div className="grid gap-5 sm:grid-cols-2">
               <div>
-                <label htmlFor="contact-name" className="mb-2 block font-mono text-[10px] uppercase tracking-[0.22em] text-slate-400">Full name</label>
+                <label htmlFor="contact-name" className="mb-2 block font-mono text-[10px] font-medium uppercase tracking-[0.22em] text-slate-600">Full name</label>
                 <input id="contact-name" required value={form.name} onChange={set("name")} placeholder="Ada Lovelace" className="field" data-testid="contact-input-name" />
               </div>
               <div>
-                <label htmlFor="contact-email" className="mb-2 block font-mono text-[10px] uppercase tracking-[0.22em] text-slate-400">Work email</label>
+                <label htmlFor="contact-email" className="mb-2 block font-mono text-[10px] font-medium uppercase tracking-[0.22em] text-slate-600">Work email</label>
                 <input id="contact-email" type="email" required value={form.email} onChange={set("email")} placeholder="ada@company.com" className="field" data-testid="contact-input-email" />
               </div>
             </div>
             <div className="mt-5">
-              <label htmlFor="contact-company" className="mb-2 block font-mono text-[10px] uppercase tracking-[0.22em] text-slate-400">Company</label>
+              <label htmlFor="contact-company" className="mb-2 block font-mono text-[10px] font-medium uppercase tracking-[0.22em] text-slate-600">Company</label>
               <input id="contact-company" required value={form.company} onChange={set("company")} placeholder="Company Inc." className="field" data-testid="contact-input-company" />
             </div>
             <div className="mt-7">
-              <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.22em] text-slate-400">Frameworks in scope</p>
+              <p className="mb-3 font-mono text-[10px] font-medium uppercase tracking-[0.22em] text-slate-600">Frameworks in scope</p>
               <div className="flex flex-wrap gap-2">
                 {FRAMEWORK_OPTIONS.map((f) => (
                   <button
@@ -107,11 +107,10 @@ function ConsultForm() {
                     key={f}
                     onClick={() => toggleFramework(f)}
                     data-testid={`contact-input-framework-${f.toLowerCase().replace(/[^a-z0-9]+/g, "")}`}
-                    className={`rounded-full px-4 py-2 font-mono text-[11px] tracking-wider transition-[background-color,border-color,color] duration-300 ${
-                      frameworks.includes(f)
+                    className={`rounded-full px-4 py-2 font-mono text-[11px] tracking-wider transition-[background-color,border-color,color] duration-300 ${frameworks.includes(f)
                         ? "border border-brand-500/60 bg-brand-500/[0.09] text-brand-600"
-                        : "border border-slate-200 bg-white text-slate-500 hover:border-slate-300 hover:text-slate-800"
-                    }`}
+                        : "border border-slate-200 bg-white text-slate-600 hover:border-slate-300 hover:text-slate-900"
+                      }`}
                   >
                     {f}
                   </button>
@@ -119,7 +118,7 @@ function ConsultForm() {
               </div>
             </div>
             <div className="mt-7">
-              <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.22em] text-slate-400">Engagement model</p>
+              <p className="mb-3 font-mono text-[10px] font-medium uppercase tracking-[0.22em] text-slate-600">Engagement model</p>
               <div className="flex flex-wrap gap-2">
                 {MODELS.map((m) => (
                   <button
@@ -127,11 +126,10 @@ function ConsultForm() {
                     key={m.tag}
                     onClick={() => setModel(m.tag)}
                     data-testid={`contact-input-model-${m.tag.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
-                    className={`rounded-full px-4 py-2 font-mono text-[11px] tracking-wider transition-[background-color,border-color,color] duration-300 ${
-                      model === m.tag
+                    className={`rounded-full px-4 py-2 font-mono text-[11px] tracking-wider transition-[background-color,border-color,color] duration-300 ${model === m.tag
                         ? "border border-slate-900 bg-slate-900 text-white"
-                        : "border border-slate-200 bg-white text-slate-500 hover:border-slate-300 hover:text-slate-800"
-                    }`}
+                        : "border border-slate-200 bg-white text-slate-600 hover:border-slate-300 hover:text-slate-900"
+                      }`}
                   >
                     {m.tag}
                   </button>
@@ -139,7 +137,7 @@ function ConsultForm() {
               </div>
             </div>
             <div className="mt-7">
-              <label htmlFor="contact-message" className="mb-2 block font-mono text-[10px] uppercase tracking-[0.22em] text-slate-400">What are you trying to achieve?</label>
+              <label htmlFor="contact-message" className="mb-2 block font-mono text-[10px] font-medium uppercase tracking-[0.22em] text-slate-600">What are you trying to achieve?</label>
               <textarea
                 id="contact-message"
                 rows={4}
@@ -158,7 +156,7 @@ function ConsultForm() {
               Request Consultation
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </button>
-            <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.2em] text-slate-300">
+            <p className="mt-4 font-mono text-[10px] font-medium uppercase tracking-[0.2em] text-slate-500">
               Response SLA: within one business day
             </p>
           </motion.form>
@@ -174,10 +172,10 @@ function HubPanel() {
       <Reveal delay={0.1}>
         <div className="card-white overflow-hidden shadow-[0_20px_50px_-20px_rgba(15,23,42,0.12)]" data-testid="contact-hq-card">
           <div className="relative h-52 overflow-hidden">
-            <img src={IMAGES.gurgaon} alt="Gurgaon headquarters skyline at night" className="h-full w-full object-cover" />
+            <img src={IMAGES.gurgaon} alt="Gaussians Gurgaon office" className="h-full w-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
             <div className="absolute bottom-4 left-5">
-              <span className="status-pill bg-white/90 backdrop-blur">GLOBAL HEADQUARTERS</span>
+              <span className="status-pill bg-white/90 backdrop-blur">GURGAON OFFICE</span>
             </div>
           </div>
           <div className="p-7">
@@ -202,22 +200,6 @@ function HubPanel() {
           </div>
         </div>
       </Reveal>
-      <Reveal delay={0.2}>
-        <div
-          className="flex items-start gap-4 rounded-2xl border border-amber-200/80 bg-amber-50/70 p-6"
-          data-testid="contact-sla-banner"
-        >
-          <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-amber-200 bg-white">
-            <Siren className="h-5 w-5 text-amber-500" />
-          </span>
-          <div>
-            <h3 className="font-display text-base font-semibold text-amber-800">Incident? We respond in &lt;24 hours.</h3>
-            <p className="mt-1.5 text-sm leading-relaxed text-slate-500">
-              Emergency breach and audit-escalation response with rapid engagement. Call the hotline directly.
-            </p>
-          </div>
-        </div>
-      </Reveal>
     </div>
   );
 }
@@ -226,11 +208,23 @@ export default function Contact() {
   return (
     <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} data-testid="contact-page">
       <PageHeader
-        chapter={{ no: "01", label: "Contact" }}
-        title="Start your compliance"
-        accent="journey."
-        sub="Tell us where you're headed. A practice director — not a sales rep — will scope your engagement and respond within one business day."
+        chapter={{ no: "01", label: "Connect With Us" }}
+        title="Take the next step with"
+        accent="clarity and confidence."
+        sub="Have a question, need support, or want to explore how Gaussians can help your organization? We would be happy to connect."
       />
+      <section className="px-6 pb-12 lg:px-12">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-6 rounded-2xl border border-slate-200/80 bg-slate-50/70 p-8 sm:p-10 lg:grid-cols-2">
+            <p className="text-sm leading-relaxed text-slate-600 sm:text-base">
+              Whether you are preparing for an audit, building a compliance program, improving your cybersecurity posture, managing third-party risk, or looking for advisory support, our team can help you identify the right next steps.
+            </p>
+            <p className="text-sm leading-relaxed text-slate-600 sm:text-base">
+              At Gaussians, we believe the best outcomes come from strong partnerships. Whether you need guidance, execution, ongoing support, or specialist expertise, we are ready to become an extension of your team and help you achieve your goals.
+            </p>
+          </div>
+        </div>
+      </section>
       <section className="px-6 pb-28 lg:px-12">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-12">
           <Reveal className="lg:col-span-7">

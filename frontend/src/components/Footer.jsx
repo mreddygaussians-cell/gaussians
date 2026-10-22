@@ -21,8 +21,8 @@ export default function Footer() {
           <div className="lg:col-span-4">
             <Logo light />
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-slate-400">
-              Security engineered for velocity. Compliance built for scale. Hands-on GRC execution for organizations
-              that refuse to slow down.
+              Operationalizing Security, Compliance, and Trust. Helping organizations transform security, compliance,
+              and risk management into strategic advantages through practical execution.
             </p>
             <div className="mt-6">
               <span className="status-pill-dark" data-testid="footer-status-pill">
@@ -61,7 +61,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="lg:col-span-3">
-            <h4 className="font-mono text-[11px] uppercase tracking-[0.25em] text-slate-500">Global Hub</h4>
+            <h4 className="font-mono text-[11px] uppercase tracking-[0.25em] text-slate-500">Office Location</h4>
             <ul className="mt-5 space-y-3 text-sm text-slate-400">
               <li className="flex items-start gap-2.5">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
@@ -84,7 +84,7 @@ export default function Footer() {
         </div>
         <div className="mt-16 flex flex-col gap-3 border-t border-slate-800 pt-8 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-mono text-[11px] tracking-wider text-slate-500">© 2026 GAUSSIANS. ALL RIGHTS RESERVED.</p>
-          <p className="font-mono text-[11px] tracking-wider text-slate-500">GURGAON HQ — NORTH AMERICA · EMEA · APAC</p>
+          <p className="font-mono text-[11px] tracking-wider text-slate-500">GURGAON OFFICE · HARYANA, INDIA</p>
         </div>
       </div>
     </footer>

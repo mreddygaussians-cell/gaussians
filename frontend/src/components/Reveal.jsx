@@ -21,7 +21,7 @@ export function Chapter({ index, label, className = "" }) {
     <Reveal className={`flex items-center gap-4 ${className}`} y={14}>
       <span className="font-mono text-xs tracking-[0.3em] text-brand-500">{index}</span>
       <span className="h-px w-12 bg-gradient-to-r from-brand-500/60 to-transparent" />
-      <span className="font-mono text-xs uppercase tracking-[0.3em] text-slate-400">{label}</span>
+      <span className="font-mono text-xs font-medium uppercase tracking-[0.3em] text-slate-600">{label}</span>
     </Reveal>
   );
 }

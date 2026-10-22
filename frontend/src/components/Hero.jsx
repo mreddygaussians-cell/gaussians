@@ -88,37 +88,42 @@ export default function Hero() {
             >
               <span className="status-pill" data-testid="hero-status-pill">
                 <span className="h-1.5 w-1.5 rounded-full bg-brand-500 animate-pulse-dot" />
-                STATUS: OPERATIONAL · 100% AUDIT READINESS RATE
+                STATUS: OPERATIONAL · GAUSSIANS ASSURANCE
               </span>
-              <span className="font-mono text-[11px] uppercase tracking-[0.25em] text-slate-400">
-                Modernizing Security, Risk & Compliance
+              <span className="font-mono text-[11px] font-medium uppercase tracking-[0.25em] text-slate-600">
+                Operationalizing Security, Compliance & Trust
               </span>
             </motion.div>
 
             <h1 className="mt-8 font-display text-4xl font-bold leading-[1.05] tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
-              <KineticLine delay={0.5}>Security engineered</KineticLine>
+              <KineticLine delay={0.5}>Operationalizing</KineticLine>
               <KineticLine delay={0.62}>
-                for <em className="font-serif font-medium italic text-brand-500">velocity.</em>
+                <em className="font-serif font-medium italic text-brand-500">Security,</em> Compliance,
               </KineticLine>
-              <KineticLine delay={0.74}>Compliance built</KineticLine>
-              <KineticLine delay={0.86}>
-                for{" "}
+              <KineticLine delay={0.74}>
+                and{" "}
                 <em className="font-serif font-medium italic underline decoration-brand-300 decoration-[3px] underline-offset-8">
-                  scale.
+                  Trust.
                 </em>
               </KineticLine>
             </h1>
 
-            <motion.p
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.15, ease: EASE }}
-              className="mt-8 max-w-xl text-base leading-relaxed text-slate-500 sm:text-lg"
+              className="mt-8 max-w-xl space-y-4 text-base leading-relaxed text-slate-500 sm:text-lg"
             >
-              We move beyond passive advisory. Gaussians embeds within your organization to design, build, and
-              operationalize enterprise GRC, audit defense, and AI governance — transforming complex regulatory
-              requirements into strategic growth drivers with zero friction.
-            </motion.p>
+              <p>
+                Helping organizations transform security, compliance, and risk management from business challenges into
+                strategic advantages through practical execution and long-term partnership.
+              </p>
+              <p>
+                We do not only advise. We deliver. From audit readiness and risk management to managed services and
+                specialist talent solutions, we help organizations turn complex requirements into structured, scalable,
+                and business-aligned programs.
+              </p>
+            </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -127,11 +132,11 @@ export default function Hero() {
               className="mt-10 flex flex-wrap items-center gap-4"
             >
               <Link
-                to="/contact"
+                to="/services"
                 data-testid="hero-cta-button"
                 className="group inline-flex items-center gap-2.5 rounded-full bg-slate-900 px-7 py-3.5 font-display text-sm font-semibold text-white transition-[background-color,box-shadow,transform] duration-300 hover:-translate-y-0.5 hover:bg-brand-500 hover:shadow-[0_12px_32px_-6px_rgba(117,112,212,0.5)]"
               >
-                Launch Compliance Journey
+                Explore Our Services
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
               <Link
@@ -140,7 +145,7 @@ export default function Hero() {
                 className="group inline-flex items-center gap-2.5 rounded-full border border-slate-300 bg-white/70 px-7 py-3.5 font-display text-sm font-semibold text-slate-700 backdrop-blur transition-[border-color,color] duration-300 hover:border-slate-900 hover:text-slate-900"
               >
                 <CalendarClock className="h-4 w-4 text-brand-500" />
-                Book 1:1 Executive Consultation
+                Talk to an Expert
               </Link>
             </motion.div>
           </div>
@@ -170,7 +175,7 @@ export default function Hero() {
                 <span className="h-2 w-2 rounded-full bg-brand-500 animate-pulse-dot" />
               </span>
               <div>
-                <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slate-400">GRC Engine</p>
+                <p className="font-mono text-[10px] font-medium uppercase tracking-[0.22em] text-slate-600">GRC Engine</p>
                 <p className="font-mono text-[11px] font-semibold tracking-wider text-slate-800">
                   CONTROLS: MAPPED · EVIDENCE: LIVE
                 </p>
@@ -189,7 +194,7 @@ export default function Hero() {
           {METRICS.map((m) => (
             <div key={m.label} className="border-slate-100 px-6 py-8 [&:not(:last-child)]:border-r max-lg:[&:nth-child(-n+2)]:border-b">
               <Counter prefix={m.prefix} value={m.value} suffix={m.suffix} />
-              <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.2em] text-slate-400">{m.label}</p>
+              <p className="mt-2 font-mono text-[11px] font-medium uppercase tracking-[0.2em] text-slate-600">{m.label}</p>
             </div>
           ))}
         </motion.div>

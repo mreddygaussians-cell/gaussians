@@ -57,7 +57,7 @@ export default function Navbar() {
               data-testid={`nav-link-${l.id}`}
               className={({ isActive }) =>
                 `rounded-full px-4 py-2 text-sm font-medium transition-[color,background-color] duration-300 ${
-                  isActive ? "bg-slate-100/90 text-slate-900" : "text-slate-500 hover:bg-slate-100/60 hover:text-slate-900"
+                  isActive ? "bg-slate-100/90 text-slate-900" : "text-slate-600 hover:bg-slate-100/60 hover:text-slate-900"
                 }`
               }
             >
