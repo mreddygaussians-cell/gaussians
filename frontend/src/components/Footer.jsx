@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { Logo } from "@/components/Navbar";
 import { CONTACT } from "@/data/content";
 
@@ -61,7 +61,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="lg:col-span-3">
-            <h4 className="font-mono text-[11px] uppercase tracking-[0.25em] text-slate-500">Office Location</h4>
+            <h4 className="font-mono text-[11px] uppercase tracking-[0.25em] text-slate-500">Contact Info</h4>
             <ul className="mt-5 space-y-3 text-sm text-slate-400">
               <li className="flex items-start gap-2.5">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
@@ -74,10 +74,6 @@ export default function Footer() {
                 <a href={`tel:${CONTACT.phone.replace(/\s/g, "")}`} data-testid="footer-phone" className="transition-colors duration-300 hover:text-brand-300">
                   {CONTACT.phone}
                 </a>
-              </li>
-              <li className="flex items-start gap-2.5">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
-                <span>{CONTACT.address}</span>
               </li>
             </ul>
           </div>

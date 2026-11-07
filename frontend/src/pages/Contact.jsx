@@ -188,10 +188,12 @@ function HubPanel() {
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand-500" />
                 <a href={`tel:${CONTACT.phone.replace(/\s/g, "")}`} data-testid="contact-phone-link" className="transition-colors duration-300 hover:text-brand-600">{CONTACT.phone}</a>
               </li>
-              <li className="flex items-start gap-3">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand-500" />
-                <span>{CONTACT.address}</span>
-              </li>
+              {CONTACT.address && (
+                <li className="flex items-start gap-3">
+                  <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand-500" />
+                  <span>{CONTACT.address}</span>
+                </li>
+              )}
               <li className="flex items-start gap-3">
                 <Globe2 className="mt-0.5 h-4 w-4 shrink-0 text-brand-500" />
                 <span className="text-slate-500">{CONTACT.regions}</span>

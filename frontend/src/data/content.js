@@ -411,6 +411,6 @@ export const ARTICLE_CATEGORIES = ["All", "AI Security", "Cloud Audits", "Regula
 export const CONTACT = {
   email: "info@gaussians.com",
   phone: "+91 9711283991",
-  address: "Unit 314, Suncity Success Tower, Sector 65, Gurgaon, Haryana 122001, India",
+  address: "Gurgaon, Haryana, India",
   regions: "Supporting organizations across global markets with trusted expertise in cybersecurity, compliance, governance, and assurance through offshore, remote, hybrid, and embedded team structures.",
 };
