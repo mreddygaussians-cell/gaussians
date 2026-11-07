@@ -80,7 +80,7 @@ export default function Footer() {
         </div>
         <div className="mt-16 flex flex-col gap-3 border-t border-slate-800 pt-8 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-mono text-[11px] tracking-wider text-slate-500">© 2026 GAUSSIANS. ALL RIGHTS RESERVED.</p>
-          <p className="font-mono text-[11px] tracking-wider text-slate-500">GURGAON OFFICE · HARYANA, INDIA</p>
+          <p className="font-mono text-[11px] tracking-wider text-slate-500">GLOBAL GRC & SECURITY ADVISORY</p>
         </div>
       </div>
     </footer>

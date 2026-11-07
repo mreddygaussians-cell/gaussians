@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Mail, Phone, MapPin, Globe2, CheckCircle2, ArrowRight } from "lucide-react";
+import { Mail, Phone, Globe2, CheckCircle2, ArrowRight } from "lucide-react";
 import { toast } from "sonner";
 import { Reveal, PageHeader, EASE } from "@/components/Reveal";
 import { CONTACT, FRAMEWORKS, MODELS, IMAGES } from "@/data/content";
@@ -172,10 +172,10 @@ function HubPanel() {
       <Reveal delay={0.1}>
         <div className="card-white overflow-hidden shadow-[0_20px_50px_-20px_rgba(15,23,42,0.12)]" data-testid="contact-hq-card">
           <div className="relative h-52 overflow-hidden">
-            <img src={IMAGES.gurgaon} alt="Gaussians Gurgaon office" className="h-full w-full object-cover" />
+            <img src={IMAGES.office} alt="Gaussians office" className="h-full w-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
             <div className="absolute bottom-4 left-5">
-              <span className="status-pill bg-white/90 backdrop-blur">GURGAON OFFICE</span>
+              <span className="status-pill bg-white/90 backdrop-blur">CONTACT INFO</span>
             </div>
           </div>
           <div className="p-7">
@@ -188,12 +188,6 @@ function HubPanel() {
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand-500" />
                 <a href={`tel:${CONTACT.phone.replace(/\s/g, "")}`} data-testid="contact-phone-link" className="transition-colors duration-300 hover:text-brand-600">{CONTACT.phone}</a>
               </li>
-              {CONTACT.address && (
-                <li className="flex items-start gap-3">
-                  <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand-500" />
-                  <span>{CONTACT.address}</span>
-                </li>
-              )}
               <li className="flex items-start gap-3">
                 <Globe2 className="mt-0.5 h-4 w-4 shrink-0 text-brand-500" />
                 <span className="text-slate-500">{CONTACT.regions}</span>

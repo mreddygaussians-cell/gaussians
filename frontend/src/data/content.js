@@ -18,7 +18,7 @@ export const IMAGES = {
   megha: "/megha.jpeg",
   mallikarjuna: "/arjun.jpeg",
   community: "https://images.unsplash.com/photo-1543067361-9bf996edf6ff?crop=entropy&cs=srgb&fm=jpg&q=85",
-  gurgaon: "https://images.unsplash.com/photo-1761413049230-2c0dd9af7c9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjB0ZWNoJTIwb2ZmaWNlJTIwYnVpbGRpbmclMjBndXJnYW9uJTIwYXJjaGl0ZWN0dXJlJTIwc2t5c2NyYXBlciUyMG5pZ2h0fGVufDB8fHx8MTc4OTIwNTc2MHww&ixlib=rb-4.1.0&q=85",
+  office: "https://images.unsplash.com/photo-1761413049230-2c0dd9af7c9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjB0ZWNoJTIwb2ZmaWNlJTIwYnVpbGRpbmclMjBndXJnYW9uJTIwYXJjaGl0ZWN0dXJlJTIwc2t5c2NyYXBlciUyMG5pZ2h0fGVufDB8fHx8MTc4OTIwNTc2MHww&ixlib=rb-4.1.0&q=85",
   heroVideo: "https://videos.pexels.com/video-files/3129671/3129671-hd_1920_1080_30fps.mp4",
 };
 
@@ -411,6 +411,5 @@ export const ARTICLE_CATEGORIES = ["All", "AI Security", "Cloud Audits", "Regula
 export const CONTACT = {
   email: "info@gaussians.com",
   phone: "+91 9711283991",
-  address: "Gurgaon, Haryana, India",
   regions: "Supporting organizations across global markets with trusted expertise in cybersecurity, compliance, governance, and assurance through offshore, remote, hybrid, and embedded team structures.",
 };
